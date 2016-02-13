@@ -1,0 +1,15 @@
+{
+  "name": "mine",
+  "dependencies": {
+    "jquery": "1.8.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "modernizr": "2.8.3",
+    "bPopup": "bpopup#~0.11.0",
+    "qtip2": "~2.2.1",
+    "jquery-placeholder": "^2.3.1"
+  },
+  "devDependencies": {
+    "bPopup": "bpopup#~0.11.0",
+    "jquery-placeholder": "^2.3.1"
+  }
+}
