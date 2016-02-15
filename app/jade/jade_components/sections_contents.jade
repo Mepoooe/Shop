@@ -1,0 +1,39 @@
+div.section__contents
+			- var objectItems = {'10 990' : 'Microsoft Lumia 640 RM-1077','9 900' : 'Archos 50 Oxygen Plus ','11 290' : 'Samsung GT-I9301I  GALAXY S 3'}
+
+				- var objectDescript = {'Тип SIM-карты' : 'Micro-SIM','Количество SIM-карт' : '1','Цвет' : 'Белый'}
+					each first, second in objectDescript
+
+						each value, key in objectItems
+
+							div.section__contents-item
+
+								div.section__contents-item-slider
+									div.section__contents-item-slider-bigImg
+										img.section__contents-item-slider(src="../../img/telephone/sumsung.png")
+
+								div.section__contents-item-name
+									h4.div.section__contents-item-name-text= value
+
+								div.section__contents-item-description
+									if value == 'Microsoft Lumia 640 RM-1077'
+										span= second
+									else
+										span= first
+
+								div.section__contents-item-reiting
+									div.section__contents-item-reiting-stars
+
+								div.section__contents-item-price
+									h4.div.section__contents-item-price-text= key
+
+								div.section__contents-item-bascet
+									div.section__contents-item-bascet-have
+										|В наличии
+									button.section__contents-item-bascet-button(type="submit" name="buy")
+										|Купить
+
+
+
+
+

@@ -1,0 +1,26 @@
+aside.aside
+		div.aside__filterPrice
+			-
+				var filterPriceObject = [
+				'Флагманы',
+				'Бюджетная линейка'
+				]
+
+			ul.aside__filterPhone-list
+				each item in filterPriceObject
+					li.aside__filterPhone-list-items
+						a.aside__filterPhone-list-links(href="#")= item
+
+		div.aside__conteinerFilters
+			div.aside__conteinerFilters-having
+			div.aside__conteinerFilters-brends
+			div.aside__conteinerFilters-price
+
+			div.aside__conteinerFilters-color
+				h3.aside__conteinerFilters-color-nameBlock
+					|Цвет
+				div.aside__conteinerFilters-color-container
+					- for (i=0; i<12; i++)
+						div.aside__conteinerFilters-color-container-items
+
+			div.aside__conteinerFilters-system

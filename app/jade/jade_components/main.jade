@@ -1,0 +1,39 @@
+main.main
+	div.namePages
+		h1.namePages__text
+			|Мобильные Телефоны
+
+	include sidebars
+
+	section.section
+		div.section__sort
+			div.section__sort-byPrice
+				span.section__sort-byPrice-text
+					|Сортировать по
+				input.section__sort-byPrice-select(type="select" name="sortSelect" value="по цене")
+
+			div.section__sort-byCatalogs
+				span.section__sort-byCatalogs-text
+					|Вид Каталога
+				a.section__sort-byCatalogs-linkView1(href="#")
+					|Вид1
+				a.section__sort-byCatalogs-linkView2(href="#")
+					|Вид2
+				a.section__sort-byCatalogs-linkView3(href="#")
+					|Вид3
+
+		include sections_contents
+
+		div.section__breadcrows
+
+		div.section__information
+			div.section__information-left
+				- for (i=0; i<3; i++)
+					p.section__information-left-text
+						|Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. 
+			div.section__information-right
+				- for (i=0; i<3; i++)
+					p.section__information-right-text
+						|Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. 
+
+

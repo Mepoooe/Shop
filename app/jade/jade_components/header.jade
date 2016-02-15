@@ -1,0 +1,83 @@
+header.header
+	div.container__up
+		div.container__up-links
+			-
+				var objectSocial = {
+					'vk' : 'vk.com',
+					'fb' : 'fb.com',
+					'tw' : 'tw.com'
+					}
+
+			ul.container__up-links-list
+				each value, key in objectSocial
+					li.container__up-links-list-social-item
+						a.container__up-links-list-social(href= value)= key
+
+		div.container__up-contacts
+			span.container__up-contacts-address
+				|ул. Маяковская 6, офис 17
+			span.container__up-contacts-telephone
+				|+7 (921) 123-12-13
+
+	div.container__down
+		div.logo
+			a.logo__link(href="index.html")
+				h1.logo__link-text
+					|COOLTECH
+		div.search
+			form.search__form
+				input.search__form-text(name="search" type="text" placeholder="Что будем искать")
+				button.search__form-button(type="submit" name="searchButton")
+					|Найти
+
+		div.siteMap
+			-
+				var objectSiteMap = {
+					'Карта проезда' : '#map',
+					'История заказов' : '#history',
+					'Корзина' : '#basket'
+					}
+
+			ul.siteMap__list
+				each value, key in objectSiteMap
+					a.siteMap__list-links(href= value)
+						li.siteMap__list-links-item= key
+
+		nav.nav
+			-
+				var objectNav = {
+					'Планшеты' : '#tablets',
+					'Мобильные телефоны' : '#mobile',
+					'Mp3 плееры' : '#pleers',
+					'Персональные компьютеры' : '#pc',
+					'Ноутбуки' : '#netbooks',
+					'Аксессуары' : '#accessories',
+					'Бытовая техника' : '#Appliances'
+					}
+
+			ul.nav__list
+				each value, key in objectNav
+
+					if key == 'Mp3 плееры'
+						a.nav__list-links.active(href= value)
+							li.siteMap__list-links-item= key
+					else
+						a.nav__list-links(href= value)
+							li.siteMap__list-links-item= key
+
+		div.breadcrows
+			-
+				var breadcrowsObject = [
+				'Главная',
+				'Каталог'
+				]
+
+			ul.breadcrows__list
+				each value in breadcrowsObject
+					if value == 'Каталог'
+						a.breadcrows__list-links(href="#")
+							li.breadcrows__list-links-items= value
+					else
+						li.breadcrows__list-links-items= value
+
+
