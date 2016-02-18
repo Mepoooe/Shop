@@ -1,0 +1,155 @@
+   /* ----------css header ------------- */
+
+.header{
+	min-width: $maxWidth;
+	height: 170px;
+	background-color:#fff;
+	position:relative;
+}
+
+.container__up{
+	width: 100%;
+	margin: $marginCenter;
+	position: relative;
+	@extend %clearfix;
+}
+
+.container__up-links{
+	float: left;
+	padding: 15px 0 0 40px;
+	margin-bottom: 10px;
+}
+
+.container__up-links-list-social-item{
+	list-style: none;
+	display: inline-block;
+	margin:0px;
+	padding-left: 5px;
+		&:first-child{
+			padding:0;
+		}
+
+}
+
+
+@include social (vk, 0px -32px );
+@include social (fb, 0px 0px);
+@include social (tw, -32px 0px);
+
+.container__up-links-list-social{
+	display: block;
+	text-indent: -9999px;
+}
+
+.container__up-contacts{
+	float: right;
+	padding: 38px 200px 0 0;
+
+}
+
+.container__up-contacts-telephone{
+	margin-left: 80px;
+	font-size: 18px;
+	position: relative;
+	&:after{
+			background-image: url(../img/sprite.png);
+			background-position: -52px -16px;
+			width: 12px;
+			height: 16px;
+			content: "";
+			position: absolute;
+			top: 1px;
+			left: -18px;
+		}
+}
+
+.container__up-contacts-address{
+		font-size: 14px;
+		position: relative;
+		&:after{
+			background-image: url(../img/sprite.png);
+			background-position: -52px 0px;
+			width: 12px;
+			height: 16px;
+			content: "";
+			position: absolute;
+			top: 1px;
+			left: -18px;
+		}
+	}
+
+.container__down{
+	@extend .container__up;
+	background-color: #f4f4f4;
+	height: 85px;
+}
+
+.logo{
+	margin-left: $marginRightLeft;
+	position: absolute;
+	left:0px;
+	padding: 30px 0 0 3px;
+}
+.logo__link{
+	text-decoration: none;
+}
+.logo__link-img{
+
+}
+.logo__link-text{
+	display: none;
+}
+
+.search{
+	position: absolute;
+	left: 280px;
+	margin-left: 95px;
+	padding-top: 32px;
+}
+.search__form-text{
+	width: 268px;
+	height: 28px;
+	padding-left: 18px;
+	font-size: 14px;
+}
+.search__form-button{
+	width: 80px;
+	height: 34px;
+	margin-left: -5px;
+	color: #fff;
+	background-color: $logoColor;
+	border: 1px solid $logoColor;
+}
+
+.siteMap{
+	position: absolute; 
+	width:430px;
+	display: block;
+	left:702px;
+	margin-left: 50px;
+	padding-top: 23px;
+	padding-right:165px-60;
+}
+.siteMap__list-links-item{
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 25px;
+	&:first-child{
+		margin: 0px;
+	}
+.siteMap__list-links{
+	color: #000000;
+	&:hover{
+		color: $logoColor;
+
+	}
+}
+}
+
+
+
+
+
+
+
+   /* ----------end  css header ------------- */

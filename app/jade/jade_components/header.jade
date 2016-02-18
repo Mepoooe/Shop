@@ -3,15 +3,15 @@ header.header
 		div.container__up-links
 			-
 				var objectSocial = {
-					'vk' : 'vk.com',
-					'fb' : 'fb.com',
-					'tw' : 'tw.com'
-					}
+					'social-item-vk' : 'vk.com',
+					'social-item-fb' : 'fb.com',
+					'social-item-tw' : 'tw.com'
+					} 
 
 			ul.container__up-links-list
 				each value, key in objectSocial
 					li.container__up-links-list-social-item
-						a.container__up-links-list-social(href= value)= key
+						a.container__up-links-list-social(href= value class=key)= key
 
 		div.container__up-contacts
 			span.container__up-contacts-address
@@ -22,6 +22,7 @@ header.header
 	div.container__down
 		div.logo
 			a.logo__link(href="index.html")
+				img(src="../img/logo.png", alt="logo" class="logo__link-img")
 				h1.logo__link-text
 					|COOLTECH
 		div.search
@@ -40,44 +41,8 @@ header.header
 
 			ul.siteMap__list
 				each value, key in objectSiteMap
-					a.siteMap__list-links(href= value)
-						li.siteMap__list-links-item= key
+					li.siteMap__list-links-item
+						a.siteMap__list-links(href= value)= key
 
-		nav.nav
-			-
-				var objectNav = {
-					'Планшеты' : '#tablets',
-					'Мобильные телефоны' : '#mobile',
-					'Mp3 плееры' : '#pleers',
-					'Персональные компьютеры' : '#pc',
-					'Ноутбуки' : '#netbooks',
-					'Аксессуары' : '#accessories',
-					'Бытовая техника' : '#Appliances'
-					}
-
-			ul.nav__list
-				each value, key in objectNav
-
-					if key == 'Mp3 плееры'
-						a.nav__list-links.active(href= value)
-							li.siteMap__list-links-item= key
-					else
-						a.nav__list-links(href= value)
-							li.siteMap__list-links-item= key
-
-		div.breadcrows
-			-
-				var breadcrowsObject = [
-				'Главная',
-				'Каталог'
-				]
-
-			ul.breadcrows__list
-				each value in breadcrowsObject
-					if value == 'Каталог'
-						a.breadcrows__list-links(href="#")
-							li.breadcrows__list-links-items= value
-					else
-						li.breadcrows__list-links-items= value
 
 

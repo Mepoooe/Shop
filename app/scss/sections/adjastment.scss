@@ -1,0 +1,25 @@
+/* ---------adjastment---------- */
+body, html{
+	background-color: #f4f4f4;
+	height: 100%;
+	width: 100%;
+}
+.wrapper{
+	min-height: 100%;
+	position: relative;
+}
+.main{
+	@extend %clearfix;
+/* 	width: 1100px; */
+	margin: $marginCenter;
+}
+.empty{
+	height:30px;
+}
+.footer{
+	margin-top: -220px;
+	height:220px;
+	position:relative;
+}
+
+/* ---------end adjastment---------- */

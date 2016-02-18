@@ -1,0 +1,16 @@
+/* ----------css nav ------------- */
+/* line 5, ../../scss/sections/nav.scss */
+.nav__list-links {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 10, ../../scss/sections/nav.scss */
+.nav__list {
+  style-list: none;
+  margin-left: 30px;
+  color: red;
+  font-size: 150px;
+}
+
+/* ----------end  css nav ------------- */

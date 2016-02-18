@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru-Ua")
+	head
+		meta(charset="UTF-8")
+		//meta(name="viewport" content="width=1230")
+		meta(name="description" content="Store by Nikula Misha")
+		meta(name="keywords" content="site_store")
+		meta(name="author" content="nikula Mikhail Andreevich")
+		link(rel="stylesheet", href="../css/main.css")
+		link(rel="stylesheet", href="../fonts/stylesheet.css")
+		link(rel="stylesheet", href="../bower/normalize-css/normalize.css")
+		title
+			|Online-store
+		script(type='text/javascript').
+	body
+		div.wrapper
+			include jade_components/header
+			include jade_components/nav
+			include jade_components/main
+
+		div.empty
+		include jade_components/footer

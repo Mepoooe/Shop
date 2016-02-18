@@ -8,8 +8,12 @@ aside.aside
 
 			ul.aside__filterPhone-list
 				each item in filterPriceObject
-					li.aside__filterPhone-list-items
-						a.aside__filterPhone-list-links(href="#")= item
+					if item == 'Бюджетная линейка'
+						li.aside__filterPhone-list-items
+							a.aside__filterPhone-list-items-links.aside__filterPhone-list-items-links-active(href="#")= item
+					else
+						li.aside__filterPhone-list-items
+							a.aside__filterPhone-list-items-links(href="#")= item
 
 		div.aside__conteinerFilters
 			div.aside__conteinerFilters-having

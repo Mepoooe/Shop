@@ -1,0 +1,25 @@
+/* sass --watch app/scss/main.scss:app/css/style.css */
+
+
+
+/*   @import "compass";   */
+
+@import "_common/variable";
+
+@import "_common/mixins";
+
+@import "_layout/mixins";
+
+/* ------------- sections---------- */
+
+@import "sections/adjastment";
+
+@import "sections/header";
+
+@import "sections/nav";
+
+@import "sections/content";
+
+@import "sections/sidebar";
+
+@import "sprits/sprits.scss";

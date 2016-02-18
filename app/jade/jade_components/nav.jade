@@ -1,0 +1,38 @@
+nav.nav
+			-
+				var objectNav = {
+					'Планшеты' : '#tablets',
+					'Мобильные телефоны' : '#mobile',
+					'Mp3 плееры' : '#pleers',
+					'Персональные компьютеры' : '#pc',
+					'Ноутбуки' : '#netbooks',
+					'Аксессуары' : '#accessories',
+					'Бытовая техника' : '#Appliances'
+					}
+
+			ul.nav__list
+				each value, key in objectNav
+
+					if key == 'Мобильные телефоны'
+						li.nav__list-links-item
+							a.nav__list-links.active(href= value)= key
+					else
+						li.nav__list-links-item
+							a.nav__list-links(href= value)= key
+
+
+		div.breadcrumbs
+			-
+				var breadcrowsObject = [
+				'Главная ',
+				'Каталог'
+				]
+
+			ul.breadcrumbs__list
+				each value in breadcrowsObject
+					if value == 'Каталог'
+						li.breadcrumbs__list-links-items
+							a.breadcrumbs__list-links(href="#")= value
+					else
+						li.breadcrumbs__list-links-items= value
+							| >
