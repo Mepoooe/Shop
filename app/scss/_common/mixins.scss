@@ -22,3 +22,13 @@
 				}
 	}
 }
+
+@mixin divColors ($divClass, $divColor){
+.aside__conteinerFilters-color-container-items #{$divClass}{
+		width: 38px;
+	    height: 39px;
+	    background-color: #{$divColor};
+	    margin: 0px 17px 15px 0;
+	    display: inline-block;
+	  }
+	}

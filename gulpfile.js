@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 	uncss = require('gulp-uncss'),
 	// sass = require('gulp-sass'),
 	compass = require('gulp-compass'),
+	plumber = require('gulp-plumber'),
 	//IMG
 	spritesmith = require('gulp.spritesmith'),
 	//Build
@@ -177,6 +178,7 @@ gulp.task('sprite', function () {
 
 gulp.task('sass', function () {
   return gulp.src('app/sass/*.scss')
+  	.pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('app/css'));
 });
@@ -185,6 +187,7 @@ gulp.task('jade', function() {
   var YOUR_LOCALS = {};
  
   gulp.src(paths.jade)
+  	.pipe(plumber())
     .pipe(jade({
       locals: YOUR_LOCALS,
       pretty: '\t',
@@ -194,6 +197,7 @@ gulp.task('jade', function() {
 
 gulp.task('compass', function() {
   gulp.src('app/scss/*.scss')
+  	.pipe(plumber())
     .pipe(compass({
       config_file: 'config.rb',
       css: 'app/css',

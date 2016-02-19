@@ -17,14 +17,75 @@ aside.aside
 
 		div.aside__conteinerFilters
 			div.aside__conteinerFilters-having
+				div.aside__conteinerFilters-having-name
+					| Наличие в магазинах
+
+				input.aside__conteinerFilters-having-input(type="radio" name="having" id="filterHevingAll" value="Во всех магазинах") 
+				label.aside__conteinerFilters-having-label(for="filterHevingAll") Во всех магазинах
+				br
+				input.aside__conteinerFilters-having-input(type="radio" id="filterHavinNear" name="having")
+				label.aside__conteinerFilters-having-label(for="filterHavinNear") В ближайшем ко мне магазине
 			div.aside__conteinerFilters-brends
+				div.aside__conteinerFilters-brends-name
+					| Бренды
+
+				br
+				input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdLenova")
+				label.aside__conteinerFilters-brends-label(for="brendIdLenova") Lenova
+				br
+				input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdApple")
+				label.aside__conteinerFilters-brends-label(for="brendIdApple") Apple
+				br
+				input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdSamsung")
+				label.aside__conteinerFilters-brends-label(for="brendIdSamsung") Samsung
+				br
+				input.aside__conteinerFilters-brends-input(type="checkbox" check="checked" name="brendName" id="brendIdAsus")
+				label.aside__conteinerFilters-brends-label(for="brendIdAsus") Asus
+				br
+				input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdMotorola")
+				label.aside__conteinerFilters-brends-label(for="brendIdMotorola") Motorola
+				br
+				a.aside__conteinerFilters-brends-reset(href="#")
+					|Сбросить фильтр
 			div.aside__conteinerFilters-price
+				div.aside__conteinerFilters-price-name
+					| Цена
+				//- label.aside__conteinerFilters-price-label(for="priceMin") от
+				//- input.aside__conteinerFilters-price-input-min(type="text" name="priceMinName" id="priceMin")
+				//- label.aside__conteinerFilters-price-label(for="priceMax") до
+				//- input.aside__conteinerFilters-price-input-max(type="text" name="priceMaxName" id="priceMax")
+				input.aside__conteinerFilters-price-input-min(id="amount" type='text', readonly='', style='border:0; color:#f6931f; font-weight:bold;')
+				div.aside__conteinerFilters-price-div(id='slider-range')
 
 			div.aside__conteinerFilters-color
 				h3.aside__conteinerFilters-color-nameBlock
 					|Цвет
-				div.aside__conteinerFilters-color-container
-					- for (i=0; i<12; i++)
-						div.aside__conteinerFilters-color-container-items
+
+				- var divColors = ['white', 'grey', 'black', 'steelblue', 'red', 'yellow', 'orange', 'green', 'blue', 'purple', 'pink', 'brown']
+
+					div.aside__conteinerFilters-color-container
+						each divColor in divColors
+							div.aside__conteinerFilters-color-container-items(class=divColor)
 
 			div.aside__conteinerFilters-system
+				div.aside__conteinerFilters-system-name
+					| Операционные Системы
+
+				br
+				input.aside__conteinerFilters-system-input(type="checkbox" name="systemdName" id="systemAndroid")
+				label.aside__conteinerFilters-system-label(for="systemAndroid") Android
+				br
+				input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemApple")
+				label.aside__conteinerFilters-system-label(for="systemApple") iOS
+				br
+				input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemWindows")
+				label.aside__conteinerFilters-system-label(for="systemWindows") Windows Mobile
+				br
+				input.aside__conteinerFilters-system-input(type="checkbox" check="checked" name="systemName" id="sistemSymbian")
+				label.aside__conteinerFilters-system-label(for="sistemSymbian") Symbian
+				br
+				input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="sysytemCustom")
+				label.aside__conteinerFilters-system-label(for="sysytemCustom") Custom
+				br
+				a.aside__conteinerFilters-system-reset(href="#")
+					|Сбросить фильтр
