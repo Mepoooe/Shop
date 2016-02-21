@@ -1,23 +1,26 @@
    /* ----------css header ------------- */
 
 .header{
-	min-width: $maxWidth;
-	height: 170px;
-	background-color:#fff;
-	position:relative;
+	width: 100%;
+    min-width: 1100px;
+	/* background-color:#fff;
+	position:relative; */
 }
 
 .container__up{
-	width: 100%;
-	margin: $marginCenter;
-	position: relative;
-	@extend %clearfix;
+	background: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 0px 0px #EBEDEF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    @extend %clearfix;
 }
 
 .container__up-links{
-	float: left;
-	padding: 15px 0 0 40px;
-	margin-bottom: 10px;
+	 float: left;
+    margin-bottom: 0;
+    padding: 22px 0 0px 0;
 }
 
 .container__up-links-list-social-item{
@@ -30,8 +33,6 @@
 		}
 
 }
-
-
 @include social (vk, 0px -32px );
 @include social (fb, 0px 0px);
 @include social (tw, -32px 0px);
@@ -43,12 +44,12 @@
 
 .container__up-contacts{
 	float: right;
-	padding: 38px 200px 0 0;
+	padding: 45px 241px 0 0;
 
 }
 
 .container__up-contacts-telephone{
-	margin-left: 80px;
+	margin-left: 108px;
 	font-size: 18px;
 	position: relative;
 	&:after{
@@ -78,17 +79,22 @@
 		}
 	}
 
+
 .container__down{
-	@extend .container__up;
-	background-color: #f4f4f4;
-	height: 85px;
+	width: 100%;
+    margin-bottom: 27px;
+    padding: 30px 0 0px 0px;
+}
+.container__down-middle{
+	margin: 0;
+	width: 1100px;
 }
 
 .logo{
-	margin-left: $marginRightLeft;
-	position: absolute;
-	left:0px;
-	padding: 30px 0 0 3px;
+	display: inline-block;
+    overflow: hidden;
+    width: 237px;
+    height: 35px;
 }
 .logo__link{
 	text-decoration: none;
@@ -99,12 +105,23 @@
 .logo__link-text{
 	display: none;
 }
+.container__down-middle-position{
+    display: inline-block;
+    float: right;
+    width: 805px;
+}
 
+.container__down-container{
+display: inline-block;
+    float: right;
+    width: 805px;
+}
 .search{
-	position: absolute;
+	float:left;
+	/* position: absolute;
 	left: 280px;
 	margin-left: 95px;
-	padding-top: 32px;
+	padding-top: 32px; */
 }
 .search__form-text{
 	width: 268px;
@@ -121,29 +138,33 @@
 	border: 1px solid $logoColor;
 }
 
-.siteMap{
-	position: absolute; 
+.siteMap__list{
+	float: right;
+	margin:0;
+	padding-top: 8px;
+	/* position: absolute; 
 	width:430px;
 	display: block;
 	left:702px;
 	margin-left: 50px;
 	padding-top: 23px;
-	padding-right:165px-60;
+	padding-right:165px-60; */
 }
 .siteMap__list-links-item{
 	display: inline-block;
+	 display: inline-block;
 	font-size: 18px;
-	margin-left: 25px;
+    margin-left: 25px;
 	&:first-child{
-		margin: 0px;
+		margin-left: 0px; 
 	}
+}
 .siteMap__list-links{
 	color: #000000;
 	&:hover{
 		color: $logoColor;
 
 	}
-}
 }
 
 

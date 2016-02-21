@@ -23,6 +23,21 @@
 	}
 }
 
+@mixin views ($num, $pos, $posHover ){
+	.section__sort-byCatalogs-linkView#{$num}{
+		background-image: url(../img/sprite.png);
+		background-position: $pos;
+   		 width: 17px;
+    	height: 17px;
+			&:hover{
+				width:17px;
+				height: 17px;
+				background-image: url(../img/sprite.png);
+				background-position: $posHover;
+				}
+	}
+}
+
 @mixin divColors ($divClass, $divColor){
 .aside__conteinerFilters-color-container-items #{$divClass}{
 		width: 38px;

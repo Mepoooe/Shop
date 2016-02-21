@@ -1,26 +1,28 @@
 main.main
-	div.namePages
-		h1.namePages__text
-			|Мобильные Телефоны
+	h1.namePages
+		|Мобильные Телефоны
 
 	include sidebars
 
 	section.section
 		div.section__sort
 			div.section__sort-byPrice
-				span.section__sort-byPrice-text
-					|Сортировать по
-				input.section__sort-byPrice-select(type="select" name="sortSelect" value="по цене")
+				label(for="sortBy").catalog-sorting-form__label
+					| Сортировать по
+				select(name="sortBy").section__sort-byPrice-text
+					- var SortItemList = ['по цене', 'по популярности', 'по производителю']
+					each SortItem in SortItemList
+						option.section__sort-byPrice-text-option(value="")= SortItem
 
 			div.section__sort-byCatalogs
 				span.section__sort-byCatalogs-text
 					|Вид Каталога
-				a.section__sort-byCatalogs-linkView1(href="#")
-					|Вид1
-				a.section__sort-byCatalogs-linkView2(href="#")
-					|Вид2
-				a.section__sort-byCatalogs-linkView3(href="#")
-					|Вид3
+				a.section__sort-byCatalogs-linkView(class="section__sort-byCatalogs-linkView1")(href="#")
+					
+				a.section__sort-byCatalogs-linkView(class="section__sort-byCatalogs-linkView2")(href="#")
+					
+				a.section__sort-byCatalogs-linkView(class="section__sort-byCatalogs-linkView3")(href="#")
+					
 
 		include sections_contents
 

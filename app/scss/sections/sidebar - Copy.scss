@@ -1,19 +1,25 @@
 .aside__filterPrice{
-	border: 1px solid $borderColor;
+	border: 1px solid #DEE1E4;
     border-radius: 10px;
     background: #FBFBFB;
     margin-bottom: 38px;
     overflow: hidden;
 }
+
 .aside__filterPhone-list{
 	list-style: none;
+	width: 330px;
 	padding: 0px;
-	margin: 0;
+	margin-left: 81px;
 	border: 1ps solid #dee1e4;
 	border-radius: 5px;
 }
-.aside__filterPhone-list-items:first-child{
-    border-bottom: 1px solid $borderColor;
+.aside__filterPhone-list-items{
+	margin:0;
+	padding:0;
+	background-color: #fbfbfb;
+	border-radius: 5px;
+	
 }
 .aside__filterPhone-list-items-links{
 	text-decoration: none;
@@ -22,17 +28,21 @@
     font-size: 14px;
     color: #878787;
 	border-radius: 5px 5px 0 0;
+	
 }
 .aside__filterPhone-list-items-links-active{
 	background-color:#d9e5ea;
 	border-radius: 0 0 5px 5px;
 }
 
+/*   conteinerFilters */
+
 .aside__conteinerFilters{
 	@extend .aside__filterPhone-list;
 	background-color: #fbfbfb;
-	overflow: hidden;
 }
+
+
 
 /* block with having */
 .aside__conteinerFilters-having{

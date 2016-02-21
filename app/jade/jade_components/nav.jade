@@ -32,7 +32,8 @@ nav.nav
 				each value in breadcrowsObject
 					if value == 'Каталог'
 						li.breadcrumbs__list-links-items
-							a.breadcrumbs__list-links(href="#")= value
+							a.breadcrumbs__list-links(href="#" class="breadcrumbs__list-links-last")= value
 					else
-						li.breadcrumbs__list-links-items= value
-							| >
+						li.breadcrumbs__list-links-items
+							a.breadcrumbs__list-links(href="#")= value
+								

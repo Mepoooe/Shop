@@ -1,10 +1,11 @@
    /* ----------css nav ------------- */
-
+ 
 .nav{
-	height: 50px;
-	min-width: $maxWidth;
-	background-color: #fff;
-	margin-bottom: 32px;
+	width: 100%;
+    background: #fff;
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 30px
 }
 
 .nav__list{
@@ -48,10 +49,21 @@
 	&:first-child{
 		margin-left: 0px;
 	}
-}
-.breadcrumbs__list-links{
-	color: $logoColor;
+	&:last-child:before{
+		content: ' > ';
+	}
 }
 
+.breadcrumbs__list-links{
+	text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+}
+.breadcrumbs__list-links-last{
+	color: $logoColor;
+	text-decoration: underline;
+}
+ 
 
    /* ----------end  css nav ------------- */

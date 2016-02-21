@@ -20,29 +20,32 @@ header.header
 				|+7 (921) 123-12-13
 
 	div.container__down
-		div.logo
-			a.logo__link(href="index.html")
-				img(src="../img/logo.png", alt="logo" class="logo__link-img")
-				h1.logo__link-text
-					|COOLTECH
-		div.search
-			form.search__form
-				input.search__form-text(name="search" type="text" placeholder="Что будем искать")
-				button.search__form-button(type="submit" name="searchButton")
-					|Найти
+		.container__down-middle
+			div.logo
+				a.logo__link(href="index.html")
+					img(src="../img/logo.png", alt="logo" class="logo__link-img")
+					h1.logo__link-text
+						|COOLTECH
+			div.container__down-middle-position
+				div.search
+					form.search__form
+						input.search__form-text(name="search" type="text" placeholder="Что будем искать")
+						button.search__form-button(type="submit" name="searchButton")
+							|Найти
 
-		div.siteMap
-			-
-				var objectSiteMap = {
-					'Карта проезда' : '#map',
-					'История заказов' : '#history',
-					'Корзина' : '#basket'
-					}
+				-
+					var objectSiteMap = {
+						'Карта проезда' : '#map',
+						'История заказов' : '#history',
+						'Корзина' : '#basket'
+						}
 
-			ul.siteMap__list
-				each value, key in objectSiteMap
-					li.siteMap__list-links-item
-						a.siteMap__list-links(href= value)= key
+				ul.siteMap__list
+					each value, key in objectSiteMap
+						li.siteMap__list-links-item
+							a.siteMap__list-links(href= value)= key
+
+	include nav
 
 
 

@@ -1,225 +1,226 @@
-mixin list(items, className, active)
-    div(class="#{className}")
-        ul(class="#{className}__list")
-            each item, key in items
-                if key == active
-                    li(class="#{className}__item #{className}__item--active")
-                        a(href="#" class="#{className}__link")= item
-                else
+//
+    mixin list(items, className, active)
+        div(class="#{className}")
+            ul(class="#{className}__list")
+                each item, key in items
+                    if key == active
+                        li(class="#{className}__item #{className}__item--active")
+                            a(href="#" class="#{className}__link")= item
+                    else
+                        li(class="#{className}__item")
+                            a(href="#" class="#{className}__link")= item
+
+
+
+
+
+
+    mixin list-mod(items, className, id, mod)
+        div(class="#{className}")
+            ul(class="#{className}__list")
+                each item in items
                     li(class="#{className}__item")
                         a(href="#" class="#{className}__link")= item
 
-
-
-
-
-
-mixin list-mod(items, className, id, mod)
-    div(class="#{className}")
-        ul(class="#{className}__list")
-            each item in items
-                li(class="#{className}__item")
-                    a(href="#" class="#{className}__link")= item
-
--
-    var phones = {
-        'Samsung GT-I9301I GALAXY S 3': {
-            'code': '189238',
-            'img': {
-                1: 'product_img/189238_1.png',
-                2: 'product_img/189238_2.png',
-                3: 'product_img/189238_3.png'
+    -
+        var phones = {
+            'Samsung GT-I9301I GALAXY S 3': {
+                'code': '189238',
+                'img': {
+                    1: 'product_img/189238_1.png',
+                    2: 'product_img/189238_2.png',
+                    3: 'product_img/189238_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '1',
+                'color': 'Белый',
+                'os': 'Android',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'Есть',
+                'description': 'Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц',
+                'price': '11 290 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '1',
-            'color': 'Белый',
-            'os': 'Android',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'Есть',
-            'description': 'Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц',
-            'price': '11 290 ',
-            'availability': 'В наличии'
-        },
-        'Microsoft Lumia 640 RM-1077': {
-            'code': '283135',
-            'img': {
-                1: 'product_img/283135_1.png',
-                2: 'product_img/283135_2.png',
-                3: 'product_img/283135_3.png'
+            'Microsoft Lumia 640 RM-1077': {
+                'code': '283135',
+                'img': {
+                    1: 'product_img/283135_1.png',
+                    2: 'product_img/283135_2.png',
+                    3: 'product_img/283135_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Белый',
+                'os': 'Windows Phone',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'A-GPS',
+                'description': 'Вместе с новой Microsoft Lumia 640 Dual SIM \(RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft',
+                'price': '10 990 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Белый',
-            'os': 'Windows Phone',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'A-GPS',
-            'description': 'Вместе с новой Microsoft Lumia 640 Dual SIM \(RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft',
-            'price': '10 990 ',
-            'availability': 'В наличии'
-        },
-        'Archos 50 Oxygen Plus': {
-            'code': '345328',
-            'img': {
-                1: 'product_img/345328_1.png',
-                2: 'product_img/345328_2.png',
-                3: 'product_img/345328_3.png'
+            'Archos 50 Oxygen Plus': {
+                'code': '345328',
+                'img': {
+                    1: 'product_img/345328_1.png',
+                    2: 'product_img/345328_2.png',
+                    3: 'product_img/345328_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Серый',
+                'os': 'Android',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'Есть',
+                'description': 'Смартфон Archos 50 Oxygen Plus, серый. Моноблок, Micro-SIM, Android , 3G, Bluetooth, USB-подключение к ПК, Wi-Fi, Разрешение основной камеры 8 Мп',
+                'price': '9 900 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Серый',
-            'os': 'Android',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'Есть',
-            'description': 'Смартфон Archos 50 Oxygen Plus, серый. Моноблок, Micro-SIM, Android , 3G, Bluetooth, USB-подключение к ПК, Wi-Fi, Разрешение основной камеры 8 Мп',
-            'price': '9 900 ',
-            'availability': 'В наличии'
-        },
-        'Philips S398 Black': {
-            'code': '589338',
-            'img': {
-                1: 'product_img/589338_1.png',
-                2: 'product_img/589338_2.png',
-                3: 'product_img/589338_3.png'
+            'Philips S398 Black': {
+                'code': '589338',
+                'img': {
+                    1: 'product_img/589338_1.png',
+                    2: 'product_img/589338_2.png',
+                    3: 'product_img/589338_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Черный',
+                'os': 'Android',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'Есть',
+                'description': 'Смартфон Philips S398 Black. Черный корпус и разнообразие цветных панелей для Philips S398 как нельзя лучше подчеркнут ваш статус и уверенность в себе. Преимущества этой модели',
+                'price': '8 990 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Черный',
-            'os': 'Android',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'Есть',
-            'description': 'Смартфон Philips S398 Black. Черный корпус и разнообразие цветных панелей для Philips S398 как нельзя лучше подчеркнут ваш статус и уверенность в себе. Преимущества этой модели',
-            'price': '8 990 ',
-            'availability': 'В наличии'
-        },
-        'Microsoft Lumia 430 RM-10': {
-            'code': '387228',
-            'img': {
-                1: 'product_img/387228_1.png',
-                2: 'product_img/387228_2.png',
-                3: 'product_img/387228_3.png'
+            'Microsoft Lumia 430 RM-10': {
+                'code': '387228',
+                'img': {
+                    1: 'product_img/387228_1.png',
+                    2: 'product_img/387228_2.png',
+                    3: 'product_img/387228_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Черный',
+                'os': 'Windows Phone',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'A-GPS',
+                'description': 'Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM \(RM-1099) удобный компактный корпус',
+                'price': '5 390 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Черный',
-            'os': 'Windows Phone',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'A-GPS',
-            'description': 'Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM \(RM-1099) удобный компактный корпус',
-            'price': '5 390 ',
-            'availability': 'В наличии'
-        },
-        'Senseit L301 Black': {
-            'code': '359110',
-            'img': {
-                1: 'product_img/359110_1.png',
-                2: 'product_img/359110_2.png',
-                3: 'product_img/359110_3.png'
+            'Senseit L301 Black': {
+                'code': '359110',
+                'img': {
+                    1: 'product_img/359110_1.png',
+                    2: 'product_img/359110_2.png',
+                    3: 'product_img/359110_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Черный',
+                'os': 'Android',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'Есть',
+                'description': 'Смартфон Senseit L301 black, черный. Micro-SIM, две поддерживаемых SIM-карты, Android, 3G, GPS-модуль',
+                'price': '4 990 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Черный',
-            'os': 'Android',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'Есть',
-            'description': 'Смартфон Senseit L301 black, черный. Micro-SIM, две поддерживаемых SIM-карты, Android, 3G, GPS-модуль',
-            'price': '4 990 ',
-            'availability': 'В наличии'
-        },
-        'HIGHSCREEN WinWin Black': {
-            'code': '422105',
-            'img': {
-                1: 'product_img/422105_1.png',
-                2: 'product_img/422105_2.png',
-                3: 'product_img/422105_3.png'
+            'HIGHSCREEN WinWin Black': {
+                'code': '422105',
+                'img': {
+                    1: 'product_img/422105_1.png',
+                    2: 'product_img/422105_2.png',
+                    3: 'product_img/422105_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Черный',
+                'os': 'Windows Phone',
+                'has3g':  'Есть',
+                'has4g': 'Нет',
+                'gps': 'Есть',
+                'description': 'Смартфон HIGHSCREEN WinWin Black оснащен 4" дисплеем и двумя слотами для SIM-карт. Windows Phone , 3G, Bluetooth, USB-подключение к ПК',
+                'price': '3 990 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Черный',
-            'os': 'Windows Phone',
-            'has3g':  'Есть',
-            'has4g': 'Нет',
-            'gps': 'Есть',
-            'description': 'Смартфон HIGHSCREEN WinWin Black оснащен 4" дисплеем и двумя слотами для SIM-карт. Windows Phone , 3G, Bluetooth, USB-подключение к ПК',
-            'price': '3 990 ',
-            'availability': 'В наличии'
-        },
-        'Alcatel OT4013D PIXI 3 \(2 SIM)': {
-            'code': '112234',
-            'img': {
-                1: 'product_img/112234_1.png',
-                2: 'product_img/112234_2.png',
-                3: 'product_img/112234_3.png'
+            'Alcatel OT4013D PIXI 3 \(2 SIM)': {
+                'code': '112234',
+                'img': {
+                    1: 'product_img/112234_1.png',
+                    2: 'product_img/112234_2.png',
+                    3: 'product_img/112234_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Белый',
+                'os': 'Android',
+                'has3g': 'Есть',
+                'has4g': 'Нет',
+                'gps': 'A-GPS',
+                'description': 'Смартфон Смартфон Alcatel OT4013D PIXI 3 \(2 SIM).  Смартфон Alcatel One Touch 4013D оснащен четырехдюймовым дисплеем и двумя слотами для SIM-карт',
+                'price': '3 210 ',
+                'availability': 'В наличии'
             },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Белый',
-            'os': 'Android',
-            'has3g': 'Есть',
-            'has4g': 'Нет',
-            'gps': 'A-GPS',
-            'description': 'Смартфон Смартфон Alcatel OT4013D PIXI 3 \(2 SIM).  Смартфон Alcatel One Touch 4013D оснащен четырехдюймовым дисплеем и двумя слотами для SIM-карт',
-            'price': '3 210 ',
-            'availability': 'В наличии'
-        },
-        'Fly IQ434 Era Nano 5': {
-            'code': '187537',
-            'img': {
-                1: 'product_img/187537_1.png',
-                2: 'product_img/187537_2.png',
-                3: 'product_img/187537_3.png'
-            },
-            'sim_type': 'Micro-SIM',
-            'sim_number': '2',
-            'color': 'Черный',
-            'os': 'Android',
-            'has3g': 'Нет',
-            'has4g': 'Нет',
-            'gps': 'Нет',
-            'description': 'Смартфон Fly IQ434 Era Nano 5 оснащен 3.5" дисплеем и двумя слотами для SIM-карт. Android 2.3, Micro SD, Wi-Fi',
-            'price': '1 790 ',
-            'availability': 'В наличии'
+            'Fly IQ434 Era Nano 5': {
+                'code': '187537',
+                'img': {
+                    1: 'product_img/187537_1.png',
+                    2: 'product_img/187537_2.png',
+                    3: 'product_img/187537_3.png'
+                },
+                'sim_type': 'Micro-SIM',
+                'sim_number': '2',
+                'color': 'Черный',
+                'os': 'Android',
+                'has3g': 'Нет',
+                'has4g': 'Нет',
+                'gps': 'Нет',
+                'description': 'Смартфон Fly IQ434 Era Nano 5 оснащен 3.5" дисплеем и двумя слотами для SIM-карт. Android 2.3, Micro SD, Wi-Fi',
+                'price': '1 790 ',
+                'availability': 'В наличии'
+            }
         }
-    }
- 
-mixin products(name, list)
-    li.product
-        .product__code-label
-            | Артикул&nbsp;
-            span.product__code= list.code
-        .product__slideshow
-        each item in list.img
-            img.product__img(src= item alt=name)
-        h4.product__title= name
-        .product__description
-            p.product__attr
-                | Тип SIM-карты&nbsp;
-                span.product__value= list.sim_type
-            p.product__attr
-                | Количество SIM-карт&nbsp;
-                span.product__value= list.sim_number
-            p.product__attr
-                | Цвет&nbsp;
-                span.product__value= list.color
-            p.product__attr
-                | ОC&nbsp;
-                span.product__value= list.os
-            p.product__attr
-                | Связь 3G&nbsp;
-                span.product__value= list.has3g
-            p.product__attr
-                | 4G (LTE)&nbsp;
-                span.product__value= list.has4g
-            p.product__attr
-                | GPS-модуль&nbsp;
-                span.product__value= list.gps
-            p.product__description-text= list.description
-            .product__rating
-            .product__price= list.price
-                | &#8381;
-            .product__availability= list.availability
+     
+    mixin products(name, list)
+        li.product
+            .product__code-label
+                | Артикул&nbsp;
+                span.product__code= list.code
+            .product__slideshow
+            each item in list.img
+                img.product__img(src= item alt=name)
+            h4.product__title= name
+            .product__description
+                p.product__attr
+                    | Тип SIM-карты&nbsp;
+                    span.product__value= list.sim_type
+                p.product__attr
+                    | Количество SIM-карт&nbsp;
+                    span.product__value= list.sim_number
+                p.product__attr
+                    | Цвет&nbsp;
+                    span.product__value= list.color
+                p.product__attr
+                    | ОC&nbsp;
+                    span.product__value= list.os
+                p.product__attr
+                    | Связь 3G&nbsp;
+                    span.product__value= list.has3g
+                p.product__attr
+                    | 4G (LTE)&nbsp;
+                    span.product__value= list.has4g
+                p.product__attr
+                    | GPS-модуль&nbsp;
+                    span.product__value= list.gps
+                p.product__description-text= list.description
+                .product__rating
+                .product__price= list.price
+                    | &#8381;
+                .product__availability= list.availability
