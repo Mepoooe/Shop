@@ -8,6 +8,9 @@ body, html{
 	min-height: 100%;
 	position: relative;
 }
+.header{
+	@extend %clearfix;
+}
 .main{
 	@extend %clearfix;
  	width: 1100px; 

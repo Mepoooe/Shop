@@ -1,0 +1,170 @@
+
+/* having in store */
+.aside__conteinerFilters-having-label{
+    position: relative;
+    display: inline-block;
+    font-family: "Open Sans Regular";
+    margin: 2px 0 15px 25px;
+        &:hover{
+           &:before{
+                       content: '';
+                       width: 9px;
+                       height: 9px;
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position: 0px -30px;
+                       position: absolute;
+                       left: -22px;
+                       top:5px;
+                   }
+}
+
+    }
+
+.aside__conteinerFilters-having-label-style{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 3px solid $borderColor;
+    position: absolute;
+    left: -27px;
+    top: 0px;
+}
+
+
+
+.checkboxStyle{
+    display: none;
+
+     &:checked + .aside__conteinerFilters-having-label-style{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 3px solid $logoColor;
+            position: absolute;
+            left: -27px;
+            top: 0px;
+            &:before{
+                       content: '';
+                       width: 9px;
+                       height: 9px;
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position: 0px -30px;
+                       position: absolute;
+                       left: 2px;
+                       top: 2px;
+                   }
+        }
+}
+
+        /* brends */
+
+.aside__conteinerFilters-brends-label{
+    position: relative;
+    display: inline-block;
+    font-family: "Open Sans Regular";
+    margin: 2px 0 15px 25px;
+        &:hover{
+           &:before{
+                       content: '';
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position:-37px 0px;
+                          width: 13px;
+                          height: 10px;
+                       position: absolute;
+                       left: -24px;
+                       top:5px;
+                   }
+                }
+}
+.aside__conteinerFilters-brends-label-style{
+     display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 5px;
+    border: 3px solid $borderColor;
+    position: absolute;
+    left: -27px;
+    top: 0px;
+}
+.aside__conteinerFilters-brends-input{
+    display: none;
+
+     &:checked + .aside__conteinerFilters-brends-label-style{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 5px;
+            border: 3px solid $logoColor;
+            background-color: $logoColor;
+            position: absolute;
+            left: -27px;
+            top: 0px;
+            &:before{
+                       content: '';
+                       width: 13px;
+                       height: 10px;
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position: -18px -19px;
+                       position: absolute;
+                       left: 0px;
+                       top: 2px;
+                   }
+        }
+}
+
+/* system */
+.aside__conteinerFilters-system-label{
+    position: relative;
+    display: inline-block;
+    font-family: "Open Sans Regular";
+    margin: 2px 0 15px 25px;
+        &:hover{
+           &:before{
+                       content: '';
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position:-37px 0px;
+                          width: 13px;
+                          height: 10px;
+                       position: absolute;
+                       left: -24px;
+                       top:5px;
+                   }
+                }
+}
+.aside__conteinerFilters-system-label-style{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 5px;
+    border: 3px solid $borderColor;
+    position: absolute;
+    left: -27px;
+    top: 0px;
+}
+.aside__conteinerFilters-system-input{
+    display: none;
+
+     &:checked + .aside__conteinerFilters-system-label-style{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 5px;
+            border: 3px solid $logoColor;
+            background-color: $logoColor;
+            position: absolute;
+            left: -27px;
+            top: 0px;
+            &:before{
+                       content: '';
+                       width: 13px;
+                       height: 10px;
+                       background-image: url(../img/sprite_sidebar.png);
+                        background-position: -18px -19px;
+                       position: absolute;
+                       left: 0px;
+                       top: 2px;
+                   }
+        }
+}

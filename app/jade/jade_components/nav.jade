@@ -1,4 +1,5 @@
 nav.nav
+	.nav__container
 			-
 				var objectNav = {
 					'Планшеты' : '#tablets',
@@ -19,21 +20,3 @@ nav.nav
 					else
 						li.nav__list-links-item
 							a.nav__list-links(href= value)= key
-
-
-		div.breadcrumbs
-			-
-				var breadcrowsObject = [
-				'Главная ',
-				'Каталог'
-				]
-
-			ul.breadcrumbs__list
-				each value in breadcrowsObject
-					if value == 'Каталог'
-						li.breadcrumbs__list-links-items
-							a.breadcrumbs__list-links(href="#" class="breadcrumbs__list-links-last")= value
-					else
-						li.breadcrumbs__list-links-items
-							a.breadcrumbs__list-links(href="#")= value
-								

@@ -1,19 +1,18 @@
-.products{
-	display:none;
+.products_view2{
+	display:block;
     width: 760px;
     margin-bottom: 30px;
 }
 
 
 
-.unstyled-list{
+.unstyled-list_view2{
  	list-style-type: none;
     padding-left: 0px;
 }
-.product{
-    width: 232px;
-    margin: 0 15px 15px 0;
-    height: 513px;
+.product_view2{
+    width: 740px;
+    margin: 0 15px 0px 0;
     vertical-align: top;
     border-radius: 10px;
     display: inline-block;
@@ -25,41 +24,48 @@
 			position: relative;
 		}
 }
-.product__slideshow{
+.product__box_view2{
+	float: left;
+}
+
+
+.product__slideshow_view2{
 	width: 135px;
-	margin: auto;
+	margin: 0px;
 	margin-bottom: 6px;
 }
-.product__img-box{
+.product__img-box_view2{
 	border: 1px solid $borderColor;
 	background: #fff;
 	overflow: hidden;
 	border-radius: 2px;
 }
-.product__img{
+.product__img_view2{
 	width: 100%;
 	height: auto;
 }
-.product__img-box_big{
+.product__img-box_big_view2{
 	width: 135px;
 	height: 135px;
 	margin: 20px 0 15px 0;
 }
-.product__img-line{
+.product__img-line_view2{
 	width: 155px;
 }
-.product__img-box_mini{
+.product__img-box_mini_view2{
 	display: inline-block;
 	width: 32px;
 	height: 32px;
 	margin-right: 14px;
+
 }
-.product__code-label{
-/* 	font-family: $fontBold; */
+.product__code-label_view2{
+	font-family: bold;
 	font-size: 12px;
 	color: #7F7F7F;
+	display: inline;
 }
-.product__title{
+.product__title_view2{
 /* 	font-family: $fontSemibold; */
 }
 .products_block .product__attr:nth-child(2n+1) {
@@ -69,16 +75,16 @@
     line-height: 20px;
     padding: 0 2px 0 2px;
 }
-.product__value{
+.product__value_view2{
 	float: right;
 }
 
-.product__rating{
+.product__rating_view2{
 	margin-bottom: 5px;
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 0px;
 }
-.product__star{
+.product__star_view2{
 	display: inline-block;
 	margin-left: 1px;
 	  background-image: url(../img/sprite.png);
@@ -86,13 +92,13 @@
 	  width: 15px;
 	  height: 15px;
 }
-.product__star_red{
+.product__star_red_view2{
   background-image: url(../img/sprite.png);
   background-position: 0px -36px;
   width: 16px;
   height: 15px;
 }
-.rating{
+.rating_view2{
  font-style: normal;
     display: inline-block;
     margin-left: 15px;
@@ -110,23 +116,28 @@
 	font-size: 12px;
 	text-align: center;
 }
-.product__price{
+.product__price_view2{
 /* 	font-family: $fontSemibold; */
 	font-size: 18px;
 	text-align: center;
-	padding-bottom: 9px;
+	padding: 0;
+	margin-bottom: 0;
+	float: left;
 }
-.product__price-label{
+.product__price-label_view2{
 	/* font-family: Rouble */
 }
-.product__availability{
+.product__availability_view2{
 	/* font-family: $fontBold; */
 	font-size: 12px;
 	color: #7F7F7F;
 	float: left;
-	line-height: 3;
+	line-height: 2.5;
+	margin-left: 0px;
+	margin-right: 7px;
+
 }
-.product__availability:before{
+.product__availability_view2:before{
 	content: ' ';
 	display: inline-block;
 	margin: 0 10px 0 8px;
@@ -136,43 +147,62 @@
   		width: 8px;
   		height: 8px;
 }
-.product__button {
+.product__button_view2 {
 	font-size: 14px;
-    padding: 7px 16px 6px 12px;
+    padding: 5px 16px 5px 12px;
     float: right;
+    float: left;
+    margin-left: 30px;
 }
-.button{
+.button_view2{
 	border: 1px solid #FF6E35;
     border-radius: 5px;
     background: #FF6E35;
     color: #fff;
     font-size: 16px;
+    margin: 0px 10px 0px 0;
 }
 
-.products_block
-	.product{
+.products_block_view2
+	.product_view2{
 			width: 232px;
-			margin: 0 15px 15px 0;
+			margin: 0;
 			height: 513px;
 			vertical-align: top;
 			border-radius: 10px;
+			margin-bottom: 1px;
 		}
-	.product__code-label, .product__code, .product__description-text, .product__title-type{
-			display: none;
+	.product__code-label_view2, .product__code_view2, .product__description-text_view2, .product__title_type_view2{
+			display: block;
 		}
-	.product__title{
-			text-align: center;
-			width: 200px;
-			margin: auto;
-			height: 42px;
+	.product__title_view2{
+			text-align: left;
+			width: 333px;
+			margin: 0 0 0 15px;
 			overflow: hidden;
+    		white-space: nowrap;
+    	    text-overflow: ellipsis;
 		}
-	.product__box{
-			width: 210px;
-			margin: auto;
+	.product__box_view2{
+		    margin: 5px 0 5px 0 ;
+
 		}
-	.product__description{
+	.product__description_view2{
 			height: 140px;
 			overflow: hidden;
 			margin-bottom: 9px;
+			display: none;
 		}
+	.product__description-text_view2{
+		width: 400px;
+		margin-bottom: 25px;
+	}
+	.product__box_buy_view2{
+		float: right;
+	}
+	
+	.product__code-label_view2{
+		display: inline;
+		margin-left: 11px;
+		margin-right: 5px;
+	}

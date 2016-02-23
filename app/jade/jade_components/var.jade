@@ -165,8 +165,8 @@
 	};
 
 mixin products(name, list)
-	li.product
-		.product__box.product__box_img
+	li.product.product_view1.product_view2
+		.product__box.product__box_view1.product__box_view2.product__box_img
 			.product__slideshow
 				.product__img-box.product__img-box_big
 					img.product__img(src= list.img[0] alt=name)
@@ -219,3 +219,69 @@ mixin products(name, list)
 					| p
 			input.product__button.button(type='submit' value='В корзину')
 			.product__availability= list.availability
+
+
+
+mixin products_view1(name, list)
+	li.product_view1
+		.product__box_view1.product__box_view1_view1.product__box_view2_view1.product__box_img_view1
+			.product__slideshow_view1
+				.product__img-box_view1.product__img-box_big_view1
+					img.product__img_view1(src= list.img[0] alt=name)
+				.product__img-line_view1
+					each item in list.img
+						.product__img-box.product__img-box_mini
+							img.product__img_view1(src= item alt=name)
+			.product__code_view1
+				span.product__code-label_view1
+					| Артикул&nbsp;
+				= list.code
+		.product__box_view1.product__box_about_view1
+			h4.product__title_view1
+				span.product__title-type_view1= list.type
+				| &nbsp;
+				= name
+			.product__description_view1
+				
+					span.product__value_view1= list.gps
+			.product__description-text_view1= list.description
+			ul.product__rating_view1.unstyled-list_view1
+				li.product__star_view1.product__star_red_view1
+				li.product__star_view1.product__star_red_view1
+				li.product__star_view1.product__star_red_view1
+				li.product__star_view1.product__star_red_view1
+				li.product__star_view1
+				.rating_view1= rating
+		.product__box_view1.product__box_buy_view1
+			.product__price_view1= list.price
+				span.product__price-label_view1
+					| p
+			input.product__button_view1.button_view1(type='submit' value='В корзину')
+			.product__availability_view1= list.availability
+
+
+
+
+mixin products_view2(name, list)
+	li.product_view2
+		.product__box_view2.product__box_view2_view2.product__box_view2_view2.product__box_img_view2
+			
+			.product__code_view2
+				span.product__code-label_view2
+					| Артикул&nbsp;
+				= list.code
+		.product__box_view2.product__box_about_view2
+			h4.product__title_view2
+				span.product__title-type_view2= list.type
+				| &nbsp;
+				= name
+			.product__description_view2
+				
+					span.product__value_view2= list.gps
+			
+		.product__box_view2.product__box_buy_view2
+			.product__price_view2= list.price
+				span.product__price-label_view2
+					| p
+			.product__availability_view2= list.availability
+			input.product__button_view2.button_view2(type='submit' value='В корзину')

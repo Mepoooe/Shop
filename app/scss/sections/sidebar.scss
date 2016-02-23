@@ -32,16 +32,40 @@
 	@extend .aside__filterPhone-list;
 	background-color: #fbfbfb;
 	overflow: hidden;
+	width: 289px;
 }
 
 /* block with having */
 .aside__conteinerFilters-having{
-	padding: 15px 0 0 28px ;
+	padding: 15px 0 15px 28px ;
 	border-bottom: 1px solid #dee1e4;
 }
 .aside__conteinerFilters-having-name{
 	font-weight: bold;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    font-family: "Open Sans Semibold";
+    font-size: 17px;
+    width: 100%;
+    position: relative;
+
+}
+.aside__conteinerFilters-having-name-link{
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+    width: 260px;
+    height: 100%;
+     &:after{
+    	content: '';
+    	position: absolute;
+    	background-image: url(../img/sprite_sidebar.png);
+		background-position: -19px 0px;
+		width: 18px;
+		height: 11px;
+		top:1px;
+		right: 15px;
+    }
+
 }
 .aside__conteinerFilters-having-input{
 	margin-left: 5px;
@@ -53,7 +77,6 @@
 /* block with brends and price */
 .aside__conteinerFilters-brends{
 	@extend .aside__conteinerFilters-having;
-	border-bottom: none;
 
 }
 .aside__conteinerFilters-brends-name{
@@ -86,7 +109,7 @@
 }
 .ui-slider-horizontal{
 	height: 3px;
-	width: 260px;
+	width: 230px;
 }
 .aside__conteinerFilters-price-div{
 	    margin-bottom: 27px;
@@ -97,7 +120,7 @@
 /* block with color */
 .aside__conteinerFilters-color{
 	@extend .aside__conteinerFilters-having;
-	padding-top: 0px;
+	padding: 15px 0 15px 28px;
 	
 }
 .aside__conteinerFilters-color-container{
@@ -106,9 +129,10 @@
 	margin: 0;
 	border-bottom: none;
 }
-.aside__conteinerFilters-color-nameBlock{
-    margin-bottom: 9px;
+.aside__conteinerFilters-color-name{
+    margin-bottom: 15px;
     border-bottom: none;
+    @extend .aside__conteinerFilters-having-name;
 }
 .aside__conteinerFilters-color-container-items{
 			width: 38px;
@@ -122,14 +146,14 @@
 		    }
 		  }
 
-	$colorClass: white, grey, black, steelblue, red, yellow, orange, green, blue, purple, pink, brown;
-	@each $colorsClass in $colorClass{
+$colorClass: white, grey, black, steelblue, red, yellow, orange, green, blue, purple, pink, brown;
+@each $colorsClass in $colorClass{
 		 .#{$colorsClass}{
 			
 		    background-color: #{$colorsClass};
-		   
+		 
 		  }
-	};
+};
 /* end block with color */
 
 /* block with system */

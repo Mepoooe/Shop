@@ -1,29 +1,30 @@
 header.header
-	div.container__up
-		div.container__up-links
-			-
-				var objectSocial = {
-					'social-item-vk' : 'vk.com',
-					'social-item-fb' : 'fb.com',
-					'social-item-tw' : 'tw.com'
-					} 
+	.header__container
+		div.container__up
+			div.container__up-links
+				-
+					var objectSocial = {
+						'social-item-vk' : 'vk.com',
+						'social-item-fb' : 'fb.com',
+						'social-item-tw' : 'tw.com'
+						} 
 
-			ul.container__up-links-list
-				each value, key in objectSocial
-					li.container__up-links-list-social-item
-						a.container__up-links-list-social(href= value class=key)= key
+				ul.container__up-links-list
+					each value, key in objectSocial
+						li.container__up-links-list-social-item
+							a.container__up-links-list-social(href= value class=key)= key
 
-		div.container__up-contacts
-			span.container__up-contacts-address
-				|ул. Маяковская 6, офис 17
-			span.container__up-contacts-telephone
-				|+7 (921) 123-12-13
+			div.container__up-contacts
+				span.container__up-contacts-address
+					|ул. Маяковская 6, офис 17
+				span.container__up-contacts-telephone
+					|+7 (921) 123-12-13
 
 	div.container__down
 		.container__down-middle
 			div.logo
 				a.logo__link(href="index.html")
-					img(src="../img/logo.png", alt="logo" class="logo__link-img")
+					img.logo__link-img(src="../img/logo.png", alt="logo" class="logo__link-img")
 					h1.logo__link-text
 						|COOLTECH
 			div.container__down-middle-position
@@ -45,7 +46,7 @@ header.header
 						li.siteMap__list-links-item
 							a.siteMap__list-links(href= value)= key
 
-	include nav
+	
 
 
 

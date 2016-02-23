@@ -1,26 +1,32 @@
 .namePages{
-	font-size: 20px;
-	margin-bottom: 30px;
-	margin-top: 0;
+     font-family: "Open Sans Bold";
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
+
 .section__sort{
-	position: relative;
-	width: 740px;
-	background: #E4EBEE;
-	border: 1px solid $borderColor;
-	border-radius: 10px;
-	height: 50px;
-	margin-bottom: 20px;
+	@extend %clearfix;
+	width: 695px;
+    background-color: #e4ebee;
+    padding: 11px 0 13px 46px;
+    margin: 0 45px 0 0px;
+    border-radius: 5px;
 }
 .section__sort-byPrice{
 	float: left;
-    padding: 14px 0 0 18px;
+	margin-left: -26px;
 }
-
+.catalog-sorting-form__label{
+	font-size: 14px;
+}
 .section__sort-byPrice-text{
-	width: 141px;
-	height: 23px;
+    padding: 2px 0 5px 0px;
+    margin-left: 10px;
+    position: relative;
+    width: 141px;
     line-height: 25px;
+    font-family: "Open Sans Light";
     color: #7F7F7F;
     padding-left: 10px;
     background: #fff;
@@ -28,22 +34,18 @@
     border-radius: 3px;
     box-shadow: inset 0px 1px 1px 0px rgba(148,148,148,0.43);
 }
-
 .section__sort-byCatalogs{
 	float: right;
-	padding: 19px 16px 0 0;
+	padding: 4px 16px 0 0;
     font-size: 14px;
 }
-.section__sort-byCatalogs-text{
-vertical-align: top;
-}
-
 .section__sort-byCatalogs-linkView{
 	margin-left: 34px;
 	display: inline-block;
 	text-indent: -9999;
+    vertical-align: middle;
 }
 
 @include views (1, -35px 0px, 0px 0px);
 @include views (2, -17px -18px, -18px 0px);
-@include views (3, 0px -18px, -35px 35px);
+@include views (3, 0px -18px, 0px -18px);

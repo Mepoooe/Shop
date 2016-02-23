@@ -5,30 +5,32 @@
 		<!--meta(name="viewport" content="width=1230")-->
 		<meta name="description" content="Store by Nikula Misha">
 		<meta name="keywords" content="site_store">
-		<meta name="author" content="nikula Mikhail Andreevich">
+		<meta name="author" content="Nikula Mikhail Andreevich">
 		<link rel="stylesheet" href="../bower/jquery-ui/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="../bower/normalize-css/normalize.css">
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../fonts/stylesheet.css">
-		<link rel="stylesheet" href="../bower/normalize-css/normalize.css">
 		<title>Online-store</title>
-		<script type="text/javascript"></script>
+		<script type="text/javascript" src="../bower/modernizr/modernizr.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="container__up">
-					<div class="container__up-links">
-						<ul class="container__up-links-list">
-							<li class="container__up-links-list-social-item"><a href="vk.com" class="container__up-links-list-social social-item-vk">social-item-vk</a></li>
-							<li class="container__up-links-list-social-item"><a href="fb.com" class="container__up-links-list-social social-item-fb">social-item-fb</a></li>
-							<li class="container__up-links-list-social-item"><a href="tw.com" class="container__up-links-list-social social-item-tw">social-item-tw</a></li>
-						</ul>
+				<div class="header__container">
+					<div class="container__up">
+						<div class="container__up-links">
+							<ul class="container__up-links-list">
+								<li class="container__up-links-list-social-item"><a href="vk.com" class="container__up-links-list-social social-item-vk">social-item-vk</a></li>
+								<li class="container__up-links-list-social-item"><a href="fb.com" class="container__up-links-list-social social-item-fb">social-item-fb</a></li>
+								<li class="container__up-links-list-social-item"><a href="tw.com" class="container__up-links-list-social social-item-tw">social-item-tw</a></li>
+							</ul>
+						</div>
+						<div class="container__up-contacts"><span class="container__up-contacts-address">ул. Маяковская 6, офис 17</span><span class="container__up-contacts-telephone">+7 (921) 123-12-13</span></div>
 					</div>
-					<div class="container__up-contacts"><span class="container__up-contacts-address">ул. Маяковская 6, офис 17</span><span class="container__up-contacts-telephone">+7 (921) 123-12-13</span></div>
 				</div>
 				<div class="container__down">
 					<div class="container__down-middle">
-						<div class="logo"><a href="index.html" class="logo__link"><img src="../img/logo.png" alt="logo" class="logo__link-img">
+						<div class="logo"><a href="index.html" class="logo__link"><img src="../img/logo.png" alt="logo" class="logo__link-img logo__link-img">
 								<h1 class="logo__link-text">COOLTECH</h1></a></div>
 						<div class="container__down-middle-position">
 							<div class="search">
@@ -45,7 +47,9 @@
 						</div>
 					</div>
 				</div>
-				<nav class="nav">
+			</header>
+			<nav class="nav">
+				<div class="nav__container">
 					<ul class="nav__list">
 						<li class="nav__list-links-item"><a href="#tablets" class="nav__list-links">Планшеты</a></li>
 						<li class="nav__list-links-item"><a href="#mobile" class="nav__list-links active">Мобильные телефоны</a></li>
@@ -55,16 +59,16 @@
 						<li class="nav__list-links-item"><a href="#accessories" class="nav__list-links">Аксессуары</a></li>
 						<li class="nav__list-links-item"><a href="#Appliances" class="nav__list-links">Бытовая техника</a></li>
 					</ul>
-				</nav>
+				</div>
+			</nav>
+			<main class="main">
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs__list">
 						<li class="breadcrumbs__list-links-items"><a href="#" class="breadcrumbs__list-links">Главная </a></li>
 						<li class="breadcrumbs__list-links-items"><a href="#" class="breadcrumbs__list-links breadcrumbs__list-links-last">Каталог</a></li>
 					</ul>
 				</div>
-			</header>
-			<main class="main">
-				<h1 class="namePages">Мобильные Телефоны</h1>
+				<h1 class="namePages">Мобильные телефоны</h1>
 				<aside class="aside">
 					<div class="aside__filterPrice">
 						<ul class="aside__filterPhone-list">
@@ -74,32 +78,45 @@
 					</div>
 					<div class="aside__conteinerFilters">
 						<div class="aside__conteinerFilters-having">
-							<div class="aside__conteinerFilters-having-name">Наличие в магазинах</div>
-							<input type="radio" name="having" id="filterHevingAll" value="Во всех магазинах" class="aside__conteinerFilters-having-input">
-							<label for="filterHevingAll" class="aside__conteinerFilters-having-label">Во всех магазинах</label><br>
-							<input type="radio" id="filterHavinNear" name="having" class="aside__conteinerFilters-having-input">
-							<label for="filterHavinNear" class="aside__conteinerFilters-having-label">В ближайшем ко мне магазине</label>
+							<div class="aside__conteinerFilters-having-name"><a href="#" class="aside__conteinerFilters-having-name-link">Наличие в магазинах</a></div>
+							<label for="filterHevingAll" class="aside__conteinerFilters-having-label">Во всех магазинах
+								<input type="radio" name="having" id="filterHevingAll" class="aside__conteinerFilters-having-input checkboxStyle">
+								<div class="aside__conteinerFilters-having-label-style"></div>
+							</label><br>
+							<label for="filterHavinNear" class="aside__conteinerFilters-having-label">В ближайшем ко мне магазине
+								<input type="radio" id="filterHavinNear" name="having" class="aside__conteinerFilters-having-input checkboxStyle"><span class="aside__conteinerFilters-having-label-style"></span>
+							</label>
 						</div>
 						<div class="aside__conteinerFilters-brends">
-							<div class="aside__conteinerFilters-brends-name">Бренды</div><br>
-							<input type="checkbox" name="brendName" id="brendIdLenova" class="aside__conteinerFilters-brends-input">
-							<label for="brendIdLenova" class="aside__conteinerFilters-brends-label">Lenova</label><br>
-							<input type="checkbox" name="brendName" id="brendIdApple" class="aside__conteinerFilters-brends-input">
-							<label for="brendIdApple" class="aside__conteinerFilters-brends-label">Apple</label><br>
-							<input type="checkbox" name="brendName" id="brendIdSamsung" class="aside__conteinerFilters-brends-input">
-							<label for="brendIdSamsung" class="aside__conteinerFilters-brends-label">Samsung</label><br>
-							<input type="checkbox" check="checked" name="brendName" id="brendIdAsus" class="aside__conteinerFilters-brends-input">
-							<label for="brendIdAsus" class="aside__conteinerFilters-brends-label">Asus</label><br>
-							<input type="checkbox" name="brendName" id="brendIdMotorola" class="aside__conteinerFilters-brends-input">
-							<label for="brendIdMotorola" class="aside__conteinerFilters-brends-label">Motorola</label><br><a href="#" class="aside__conteinerFilters-brends-reset">Сбросить фильтр</a>
+							<div class="aside__conteinerFilters-brends-name"><a href="#" class="aside__conteinerFilters-having-name-link">Бренды</a></div><br>
+							<label for="brendIdLenova" class="aside__conteinerFilters-brends-label">Lenova
+								<input type="checkbox" name="brendName" id="brendIdLenova" class="aside__conteinerFilters-brends-input">
+								<div class="aside__conteinerFilters-brends-label-style"></div>
+							</label><br>
+							<label for="brendIdApple" class="aside__conteinerFilters-brends-label">Apple
+								<input type="checkbox" name="brendName" id="brendIdApple" class="aside__conteinerFilters-brends-input">
+								<div class="aside__conteinerFilters-brends-label-style"></div>
+							</label><br>
+							<label for="brendIdSamsung" class="aside__conteinerFilters-brends-label">Samsung
+								<input type="checkbox" name="brendName" id="brendIdSamsung" class="aside__conteinerFilters-brends-input">
+								<div class="aside__conteinerFilters-brends-label-style"></div>
+							</label><br>
+							<label for="brendIdAsus" class="aside__conteinerFilters-brends-label">Asus
+								<input type="checkbox" check="checked" name="brendName" id="brendIdAsus" class="aside__conteinerFilters-brends-input">
+								<div class="aside__conteinerFilters-brends-label-style"></div>
+							</label><br>
+							<label for="brendIdMotorola" class="aside__conteinerFilters-brends-label">Motorola
+								<input type="checkbox" name="brendName" id="brendIdMotorola" class="aside__conteinerFilters-brends-input">
+								<div class="aside__conteinerFilters-brends-label-style"></div>
+							</label><br><a href="#" class="aside__conteinerFilters-brends-reset">Сбросить фильтр</a>
 						</div>
 						<div class="aside__conteinerFilters-price">
-							<div class="aside__conteinerFilters-price-name">Цена</div>
+							<div class="aside__conteinerFilters-price-name"><a href="#" class="aside__conteinerFilters-having-name-link">Цена</a></div>
 							<input id="amount" type="text" readonly="" style="border:0; color:#f6931f; font-weight:bold;" class="aside__conteinerFilters-price-input-min">
 							<div id="slider-range" class="aside__conteinerFilters-price-div"></div>
 						</div>
 						<div class="aside__conteinerFilters-color">
-							<h3 class="aside__conteinerFilters-color-nameBlock">Цвет</h3>
+							<div class="aside__conteinerFilters-color-name"><a href="#" class="aside__conteinerFilters-having-name-link">Цвет</a></div>
 							<div class="aside__conteinerFilters-color-container">
 								<div class="aside__conteinerFilters-color-container-items white"></div>
 								<div class="aside__conteinerFilters-color-container-items grey"></div>
@@ -116,17 +133,27 @@
 							</div>
 						</div>
 						<div class="aside__conteinerFilters-system">
-							<div class="aside__conteinerFilters-system-name">Операционные Системы</div><br>
-							<input type="checkbox" name="systemdName" id="systemAndroid" class="aside__conteinerFilters-system-input">
-							<label for="systemAndroid" class="aside__conteinerFilters-system-label">Android</label><br>
-							<input type="checkbox" name="systemName" id="systemApple" class="aside__conteinerFilters-system-input">
-							<label for="systemApple" class="aside__conteinerFilters-system-label">iOS</label><br>
-							<input type="checkbox" name="systemName" id="systemWindows" class="aside__conteinerFilters-system-input">
-							<label for="systemWindows" class="aside__conteinerFilters-system-label">Windows Mobile</label><br>
-							<input type="checkbox" check="checked" name="systemName" id="sistemSymbian" class="aside__conteinerFilters-system-input">
-							<label for="sistemSymbian" class="aside__conteinerFilters-system-label">Symbian</label><br>
-							<input type="checkbox" name="systemName" id="sysytemCustom" class="aside__conteinerFilters-system-input">
-							<label for="sysytemCustom" class="aside__conteinerFilters-system-label">Custom</label><br><a href="#" class="aside__conteinerFilters-system-reset">Сбросить фильтр</a>
+							<div class="aside__conteinerFilters-system-name"><a href="#" class="aside__conteinerFilters-having-name-link">Операционные Системы</a></div><br>
+							<label for="systemAndroid" class="aside__conteinerFilters-system-label">Android
+								<input type="checkbox" name="systemdName" id="systemAndroid" class="aside__conteinerFilters-system-input">
+								<div class="aside__conteinerFilters-system-label-style"></div>
+							</label><br>
+							<label for="systemApple" class="aside__conteinerFilters-system-label">iOS
+								<input type="checkbox" name="systemName" id="systemApple" class="aside__conteinerFilters-system-input">
+								<div class="aside__conteinerFilters-system-label-style"></div>
+							</label><br>
+							<label for="systemWindows" class="aside__conteinerFilters-system-label">Windows Mobile
+								<input type="checkbox" name="systemName" id="systemWindows" class="aside__conteinerFilters-system-input">
+								<div class="aside__conteinerFilters-system-label-style"></div>
+							</label><br>
+							<label for="sistemSymbian" class="aside__conteinerFilters-system-label">Symbian
+								<input type="checkbox" check="checked" name="systemName" id="sistemSymbian" class="aside__conteinerFilters-system-input">
+								<div class="aside__conteinerFilters-system-label-style"></div>
+							</label><br>
+							<label for="sysytemCustom" class="aside__conteinerFilters-system-label">Custom
+								<input type="checkbox" name="systemName" id="sysytemCustom" class="aside__conteinerFilters-system-input">
+								<div class="aside__conteinerFilters-system-label-style"></div>
+							</label><br><a href="#" class="aside__conteinerFilters-system-reset">Сбросить фильтр</a>
 						</div>
 					</div>
 				</aside>
@@ -144,8 +171,8 @@
 					</div>
 					<div class="section__contents">
 						<ul class="products products_block unstyled-list">
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
 										<div class="product__img-line">
@@ -185,8 +212,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
 										<div class="product__img-line">
@@ -226,8 +253,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
 										<div class="product__img-line">
@@ -267,8 +294,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img"/></div>
 										<div class="product__img-line">
@@ -308,8 +335,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
 										<div class="product__img-line">
@@ -349,8 +376,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img"/></div>
 										<div class="product__img-line">
@@ -390,8 +417,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
 										<div class="product__img-line">
@@ -431,8 +458,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
 										<div class="product__img-line">
@@ -472,8 +499,8 @@
 									<div class="product__availability">В наличии</div>
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__box product__box_img">
+							<li class="product product_view1 product_view2">
+								<div class="product__box product__box_view1 product__box_view2 product__box_img">
 									<div class="product__slideshow">
 										<div class="product__img-box product__img-box_big"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
 										<div class="product__img-line">
@@ -514,46 +541,501 @@
 								</div>
 							</li>
 						</ul>
+						<ul class="products_view1 products_block unstyled-list">
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_2.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_3.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>189238
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Samsung GT-I9301I GALAXY S 3
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Есть</span></div>
+									<div class="product__description-text_view1">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">11 290 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_2.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_3.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>283135
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Microsoft Lumia 640 RM-1077
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">A-GPS</span></div>
+									<div class="product__description-text_view1">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">10 990 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_2.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_3.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>345328
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Archos 50 Oxygen Plus
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Есть</span></div>
+									<div class="product__description-text_view1">Смартфон Archos 50 Oxygen Plus, серый. Моноблок, Micro-SIM, Android , 3G, Bluetooth, USB-подключение к ПК, Wi-Fi, Разрешение основной камеры 8 Мп</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">9 900 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_2.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_3.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>589338
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Philips S398 Black
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Есть</span></div>
+									<div class="product__description-text_view1">Смартфон Philips S398 Black. Черный корпус и разнообразие цветных панелей для Philips S398 как нельзя лучше подчеркнут ваш статус и уверенность в себе. Преимущества этой модели</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">8 990 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_2.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_3.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>387228
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Microsoft Lumia 430 RM-10
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">A-GPS</span></div>
+									<div class="product__description-text_view1">Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">5 390 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_2.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_3.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>359110
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Senseit L301 Black
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Есть</span></div>
+									<div class="product__description-text_view1">Смартфон Senseit L301 black, черный. Micro-SIM, две поддерживаемых SIM-карты, Android, 3G, GPS-модуль</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">4 990 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_2.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_3.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>422105
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;HIGHSCREEN WinWin Black
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Есть</span></div>
+									<div class="product__description-text_view1">Смартфон HIGHSCREEN WinWin Black оснащен 4&quot; дисплеем и двумя слотами для SIM-карт. Windows Phone , 3G, Bluetooth, USB-подключение к ПК</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">3 990 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_2.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_3.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>112234
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Alcatel OT4013D PIXI 3 (2 SIM)
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">A-GPS</span></div>
+									<div class="product__description-text_view1">Смартфон Смартфон Alcatel OT4013D PIXI 3 (2 SIM).  Смартфон Alcatel One Touch 4013D оснащен четырехдюймовым дисплеем и двумя слотами для SIM-карт</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">3 210 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+							<li class="product_view1">
+								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
+									<div class="product__slideshow_view1">
+										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+										<div class="product__img-line_view1">
+											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_2.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_3.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+										</div>
+									</div>
+									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>187537
+									</div>
+								</div>
+								<div class="product__box_view1 product__box_about_view1">
+									<h4 class="product__title_view1"><span class="product__title-type_view1">Смартфон</span>&nbsp;Fly IQ434 Era Nano 5
+									</h4>
+									<div class="product__description_view1"><span class="product__value_view1">Нет</span></div>
+									<div class="product__description-text_view1">Смартфон Fly IQ434 Era Nano 5 оснащен 3.5&quot; дисплеем и двумя слотами для SIM-карт. Android 2.3, Micro SD, Wi-Fi</div>
+									<ul class="product__rating_view1 unstyled-list_view1">
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1 product__star_red_view1"></li>
+										<li class="product__star_view1"></li>
+										<div class="rating_view1">4</div>
+									</ul>
+								</div>
+								<div class="product__box_view1 product__box_buy_view1">
+									<div class="product__price_view1">1 790 <span class="product__price-label_view1">p</span></div>
+									<input type="submit" value="В корзину" class="product__button_view1 button_view1"/>
+									<div class="product__availability_view1">В наличии</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="products_view2 products_block unstyled-list">
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>189238
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Samsung GT-I9301I GALAXY S 3
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Есть</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">11 290 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>283135
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Microsoft Lumia 640 RM-1077
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">A-GPS</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">10 990 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>345328
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Archos 50 Oxygen Plus
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Есть</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">9 900 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>589338
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Philips S398 Black
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Есть</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">8 990 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>387228
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Microsoft Lumia 430 RM-10
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">A-GPS</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">5 390 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>359110
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Senseit L301 Black
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Есть</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">4 990 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>422105
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;HIGHSCREEN WinWin Black
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Есть</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">3 990 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>112234
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Alcatel OT4013D PIXI 3 (2 SIM)
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">A-GPS</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">3 210 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+							<li class="product_view2">
+								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
+									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>187537
+									</div>
+								</div>
+								<div class="product__box_view2 product__box_about_view2">
+									<h4 class="product__title_view2"><span class="product__title-type_view2">Смартфон</span>&nbsp;Fly IQ434 Era Nano 5
+									</h4>
+									<div class="product__description_view2"><span class="product__value_view2">Нет</span></div>
+								</div>
+								<div class="product__box_view2 product__box_buy_view2">
+									<div class="product__price_view2">1 790 <span class="product__price-label_view2">p</span></div>
+									<div class="product__availability_view2">В наличии</div>
+									<input type="submit" value="В корзину" class="product__button_view2 button_view2"/>
+								</div>
+							</li>
+						</ul>
+						<div class="section__contents-breadcrums">
+							<ul class="section__contents-breadcrums-list">
+								<li class="section__contents-breadcrums-item section__contents-breadcrums-item-prev-prev"><a href="#" class="section__contents-breadcrums-item-links">< </a></li>
+								<li class="section__contents-breadcrums-item section__contents-breadcrums-item-num section__contents-breadcrums-item-num-active"><a href="#" class="section__contents-breadcrums-item-links">1</a></li>
+								<li class="section__contents-breadcrums-item section__contents-breadcrums-item-num"><a href="#" class="section__contents-breadcrums-item-links">2</a></li>
+								<li class="section__contents-breadcrums-item section__contents-breadcrums-item-num"><a href="#" class="section__contents-breadcrums-item-links">3</a></li>
+								<li class="section__contents-breadcrums-item section__contents-breadcrums-item-next"><a href="#" class="section__contents-breadcrums-item-links">></a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="section__breadcrows"></div>
 				</section>
+				<div class="section__information">
+					<h2 class="section__information-name">Важная информация</h2>
+					<div class="section__information-left">
+						<p class="section__information-left-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+						<p class="section__information-left-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+						<p class="section__information-left-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+					</div>
+					<div class="section__information-right">
+						<p class="section__information-right-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+						<p class="section__information-left-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+						<p class="section__information-left-text"><span class="section__information-left-text-indent">Шаблоны</span>снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
+					</div>
+				</div>
 			</main>
-			<div class="section__information">
-				<div class="section__information-left">
-					<p class="section__information-left-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-					<p class="section__information-left-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-					<p class="section__information-left-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-				</div>
-				<div class="section__information-right">
-					<p class="section__information-right-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-					<p class="section__information-right-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-					<p class="section__information-right-text">Шаблоны снижают сложность, предоставляя готовые абстракции Если вы скажете: «В этом фрагменте для создания экземпляров производных классов применяется шаблон “Фабричный метод”», — другие программисты поймут, что ваш код включает богатый набор взаимодействий и протоколов программирования, специфических для названного шаблона. </p>
-				</div>
-			</div>
+			<div class="empty"></div>
 		</div>
-		<div class="empty"></div>
 		<footer class="footer">
-			<div class="footer__logo"><a href="index.html" class="footer__logo-link">
-					<h1 class="footer__logo-link-text">COOLTECH</h1></a></div>
-			<div class="footer__navigation">
-				<ul class="footer__navigation-links-list">
-					<li class="footer__navigation-links-list-social-item"><a href="vk.com" class="footer__navigation-links-list-social">vk</a></li>
-					<li class="footer__navigation-links-list-social-item"><a href="fb.com" class="footer__navigation-links-list-social">fb</a></li>
-					<li class="footer__navigation-links-list-social-item"><a href="tw.com" class="footer__navigation-links-list-social">tw</a></li>
-				</ul>
-				<ul class="footer__navigation-listOdersUp"><a href="#tablets" class="footer__navigation-links">
-						<li class="footer__navigation-links-item">Планшеты</li></a><a href="#mobile" class="footer__navigation-links">
-						<li class="footer__navigation-links-item">Мобильные телефоны</li></a><a href="#pleers" class="footer__navigation-links">
-						<li class="footer__navigation-links-item">Mp3 плееры</li></a>
-				</ul>
-				<ul class="footer__navigation-listOdersdown"><a href="#pc" class="footer__navigation-listOdersdown-links">
-						<li class="footer__navigation-listOdersdown-links-item">Персональные компьютеры</li></a><a href="#netbooks" class="footer__navigation-listOdersdown-links">
-						<li class="footer__navigation-listOdersdown-links-item">Ноутбуки</li></a><a href="#accessories" class="footer__navigation-listOdersdown-links">
-						<li class="footer__navigation-listOdersdown-links-item">Аксессуары</li></a><a href="#Appliances" class="footer__navigation-listOdersdown-links">
-						<li class="footer__navigation-listOdersdown-links-item">Бытовая техника</li></a>
-				</ul>
+			<div class="footer__container">
+				<div class="footer__logo"><a href="index.html" class="footer__logo-link"><img src="../img/logo_hover.png" alt="logo" class="footer__logo-link-img logo__link-img">
+						<h1 class="footer__logo-link-text">COOLTECH</h1></a></div>
+				<div class="footer__navigation">
+					<ul class="footer__navigation-links-list">
+						<li class="footer__navigation-links-list-social-item"><a href="vk.com" class="footer__navigation-links-list-social footer__navigation-links-list-social-vk">footer__navigation-links-list-social-vk</a></li>
+						<li class="footer__navigation-links-list-social-item"><a href="fb.com" class="footer__navigation-links-list-social footer__navigation-links-list-social-fb">footer__navigation-links-list-social-fb</a></li>
+						<li class="footer__navigation-links-list-social-item"><a href="tw.com" class="footer__navigation-links-list-social footer__navigation-links-list-social-tw">footer__navigation-links-list-social-tw</a></li>
+					</ul>
+					<ul class="footer__navigation-listOdersUp"><a href="#tablets" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Планшеты</li></a><a href="#mobile" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Мобильные телефоны</li></a><a href="#pleers" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Mp3 плееры</li></a><a href="#pc" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Персональные компьютеры</li></a><a href="#netbooks" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Ноутбуки</li></a><a href="#accessories" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Аксессуары</li></a><a href="#Appliances" class="footer__navigation-links">
+							<li class="footer__navigation-links-item">Бытовая техника</li></a>
+					</ul>
+				</div>
 			</div>
-			<div class="footer__copyright"><span class="footer__copyright-text">All rights reserved. 2015. no copy alowed</span></div>
+			<div class="footer__copyright"><span class="footer__copyright-text">All rights reserved. 2015. no copy alowe</span></div>
 		</footer>
 		<script src="../bower/jquery/jquery.js"></script>
 		<script src="../bower/jquery-ui/jquery-ui.min.js"></script>

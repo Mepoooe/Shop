@@ -1,0 +1,22 @@
+.section__contents-breadcrums-list{
+	list-style: none;
+	float: right;
+	padding-right: 17px;
+}
+.section__contents-breadcrums-item{
+	background-color: #fbfbfb;
+	display: inline-block;
+	font-size: 12px;
+	border: 1px solid $borderColor;
+		&:hover{
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+}
+.section__contents-breadcrums-item-links{
+	text-decoration: none;
+	display: block;
+	padding: 7px 7px 3px 11px;
+}
+.section__contents-breadcrums-item-num-active{
+	background-color: $borderColor;
+}

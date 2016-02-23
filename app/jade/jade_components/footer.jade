@@ -1,18 +1,20 @@
 footer.footer
-	div.footer__logo
-		a.footer__logo-link(href="index.html")
+	.footer__container
+		div.footer__logo
+			a.footer__logo-link(href="index.html")
+				img.footer__logo-link-img(src="../img/logo_hover.png", alt="logo" class="logo__link-img")
 				h1.footer__logo-link-text
 					|COOLTECH
 
-	div.footer__navigation
-		- var objectSocial = {'vk' : 'vk.com','fb' : 'fb.com','tw' : 'tw.com'}
+		div.footer__navigation
+			- var objectSocial = {'footer__navigation-links-list-social-vk' : 'vk.com','footer__navigation-links-list-social-fb' : 'fb.com','footer__navigation-links-list-social-tw' : 'tw.com'}
 
-			ul.footer__navigation-links-list
-				each value, key in objectSocial
-					li.footer__navigation-links-list-social-item
-						a.footer__navigation-links-list-social(href= value)= key
+				ul.footer__navigation-links-list
+					each value, key in objectSocial
+						li.footer__navigation-links-list-social-item
+							a.footer__navigation-links-list-social(href= value class=key)= key
 
-		- var objectNav = {'Планшеты' : '#tablets','Мобильные телефоны' : '#mobile','Mp3 плееры' : '#pleers'}
+			- var objectNav = {'Планшеты' : '#tablets','Мобильные телефоны' : '#mobile','Mp3 плееры' : '#pleers', 'Персональные компьютеры' : '#pc','Ноутбуки' : '#netbooks','Аксессуары' : '#accessories','Бытовая техника' : '#Appliances'}
 
 				ul.footer__navigation-listOdersUp
 
@@ -20,14 +22,6 @@ footer.footer
 						a.footer__navigation-links(href= value)
 							li.footer__navigation-links-item= key
 
-		- var objectNav = {'Персональные компьютеры' : '#pc','Ноутбуки' : '#netbooks','Аксессуары' : '#accessories','Бытовая техника' : '#Appliances'}
-
-				ul.footer__navigation-listOdersdown
-
-					each value, key in objectNav
-						a.footer__navigation-listOdersdown-links(href= value)
-							li.footer__navigation-listOdersdown-links-item= key
-
 	div.footer__copyright
 		span.footer__copyright-text
-			|All rights reserved. 2015. no copy alowed
+			|All rights reserved. 2015. no copy alowe

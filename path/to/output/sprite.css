@@ -9,21 +9,51 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-facebook {
+.icon-Ellipse2 {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 32px;
-  height: 32px;
+  width: 19px;
+  height: 19px;
 }
-.icon-twitter {
+.icon-checkbox_checked {
   background-image: url(sprite.png);
-  background-position: -32px 0px;
-  width: 32px;
-  height: 32px;
+  background-position: -18px -19px;
+  width: 13px;
+  height: 10px;
 }
-.icon-vkontakte {
+.icon-checkbox_hover {
   background-image: url(sprite.png);
-  background-position: 0px -32px;
-  width: 32px;
-  height: 32px;
+  background-position: -37px 0px;
+  width: 13px;
+  height: 10px;
+}
+.icon-ellipse {
+  background-image: url(sprite.png);
+  background-position: 0px -30px;
+  width: 9px;
+  height: 9px;
+}
+.icon-hide_line {
+  background-image: url(sprite.png);
+  background-position: -19px 0px;
+  width: 18px;
+  height: 11px;
+}
+.icon-hide_line_sort {
+  background-image: url(sprite.png);
+  background-position: -37px -10px;
+  width: 13px;
+  height: 9px;
+}
+.icon-show_line {
+  background-image: url(sprite.png);
+  background-position: 0px -19px;
+  width: 18px;
+  height: 11px;
+}
+.icon-show_line_sort {
+  background-image: url(sprite.png);
+  background-position: -37px -19px;
+  width: 13px;
+  height: 9px;
 }

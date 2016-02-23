@@ -1,9 +1,30 @@
 
 div.section__contents
-
+	
 	ul.products.products_block.unstyled-list
 		each value, key in phones		
 			+products(key, value)
+	ul.products_view1.products_block.unstyled-list
+		each value, key in phones		
+			+products_view1(key, value)
+	ul.products_view2.products_block.unstyled-list
+		each value, key in phones		
+			+products_view2(key, value)
+
+	.section__contents-breadcrums
+		ul.section__contents-breadcrums-list
+			li.section__contents-breadcrums-item.section__contents-breadcrums-item-prev-prev
+				a.section__contents-breadcrums-item-links(href='#') < 
+			- for (var i = 1; i <=3; i++)
+				if i !=1
+					li.section__contents-breadcrums-item.section__contents-breadcrums-item-num
+						a.section__contents-breadcrums-item-links(href='#')= i
+				else
+					li.section__contents-breadcrums-item.section__contents-breadcrums-item-num.section__contents-breadcrums-item-num-active
+						a.section__contents-breadcrums-item-links(href='#')= i
+			li.section__contents-breadcrums-item.section__contents-breadcrums-item-next
+				a.section__contents-breadcrums-item-links(href='#') >
+
 
 
 

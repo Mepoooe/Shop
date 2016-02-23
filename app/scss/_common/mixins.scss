@@ -22,6 +22,19 @@
 				}
 	}
 }
+@mixin socialFooter ($soc, $pos ){
+	.footer__navigation-links-list-social-#{$soc}{
+		background-image: url(../img/sprite_socials.png);
+		background-position: $pos;
+		width:32px;
+		height: 32px;
+			&:hover{
+				width:32px;
+				height: 32px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				}
+	}
+}
 
 @mixin views ($num, $pos, $posHover ){
 	.section__sort-byCatalogs-linkView#{$num}{
