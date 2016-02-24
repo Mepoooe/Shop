@@ -127,10 +127,7 @@ display: inline-block;
 }
 .search{
 	float:left;
-	/* position: absolute;
-	left: 280px;
-	margin-left: 95px;
-	padding-top: 32px; */
+	
 }
 .search__form-text{
 	width: 268px;
@@ -151,13 +148,7 @@ display: inline-block;
 	float: right;
 	margin:0;
 	padding-top: 8px;
-	/* position: absolute; 
-	width:430px;
-	display: block;
-	left:702px;
-	margin-left: 50px;
-	padding-top: 23px;
-	padding-right:165px-60; */
+	padding-left:0px;
 }
 .siteMap__list-links-item{
 	display: inline-block;

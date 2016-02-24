@@ -131,6 +131,7 @@
     color: #555555;
     top: 3px;
     background-color: white;
+    outline: none;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     border: none; 
@@ -217,6 +218,10 @@
 		    	box-shadow: 0 0 10px #FF6600;
 		    }
 		  }
+.activeColorSidebar{
+	box-shadow: 0 0 10px #FF6600;
+}
+
 
 $colorClass: white, grey, black, steelblue, red, yellow, orange, green, blue, purple, pink, brown;
 @each $colorsClass in $colorClass{
