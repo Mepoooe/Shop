@@ -167,13 +167,14 @@
 mixin products(name, list)
 	li.product.product_view1.product_view2
 		.product__box.product__box_view1.product__box_view2.product__box_img
-			.product__slideshow
-				.product__img-box.product__img-box_big
+			.product__slideshow.slideshow
+				.product__img-box.product__img-box_big.slideshow_display
 					img.product__img(src= list.img[0] alt=name)
 				.product__img-line
 					each item in list.img
-						.product__img-box.product__img-box_mini
-							img.product__img(src= item alt=name)
+						.product__img-box.product__img-box_mini.slideshow_item
+							a.slideshow_pic(href="#")
+								img.product__img(src= item alt=name)
 			.product__code
 				span.product__code-label
 					| Артикул&nbsp;
@@ -225,13 +226,14 @@ mixin products(name, list)
 mixin products_view1(name, list)
 	li.product_view1
 		.product__box_view1.product__box_view1_view1.product__box_view2_view1.product__box_img_view1
-			.product__slideshow_view1
-				.product__img-box_view1.product__img-box_big_view1
+			.product__slideshow_view1.slideshow
+				.product__img-box_view1.product__img-box_big_view1.slideshow_display
 					img.product__img_view1(src= list.img[0] alt=name)
 				.product__img-line_view1
 					each item in list.img
-						.product__img-box.product__img-box_mini
-							img.product__img_view1(src= item alt=name)
+						.product__img-box.product__img-box_mini.slideshow_item
+							a.slideshow_pic(href="#")
+								img.product__img_view1(src= item alt=name)
 			.product__code_view1
 				span.product__code-label_view1
 					| Артикул&nbsp;

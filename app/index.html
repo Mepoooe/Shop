@@ -77,47 +77,60 @@
 						</ul>
 					</div>
 					<div class="aside__conteinerFilters">
-						<div class="aside__conteinerFilters-having">
-							<div class="aside__conteinerFilters-having-name"><a href="#" class="aside__conteinerFilters-having-name-link">Наличие в магазинах</a></div>
-							<label for="filterHevingAll" class="aside__conteinerFilters-having-label">Во всех магазинах
-								<input type="radio" name="having" id="filterHevingAll" class="aside__conteinerFilters-having-input checkboxStyle">
-								<div class="aside__conteinerFilters-having-label-style"></div>
-							</label><br>
-							<label for="filterHavinNear" class="aside__conteinerFilters-having-label">В ближайшем ко мне магазине
-								<input type="radio" id="filterHavinNear" name="having" class="aside__conteinerFilters-having-input checkboxStyle"><span class="aside__conteinerFilters-having-label-style"></span>
-							</label>
+						<div class="aside__conteinerFilters-having accordeonItem">
+							<div class="aside__conteinerFilters-having-name"><a href="#" class="aside__conteinerFilters-having-name-link accordion_trigger">Наличие в магазинах</a></div>
+							<div class="accordeonContainer">
+								<label for="filterHevingAll" class="aside__conteinerFilters-having-label">Во всех магазинах
+									<input type="radio" name="having" id="filterHevingAll" class="aside__conteinerFilters-having-input checkboxStyle">
+									<div class="aside__conteinerFilters-having-label-style"></div>
+								</label>
+								<label for="filterHavinNear" class="aside__conteinerFilters-having-label">В ближайшем ко мне магазине
+									<input type="radio" id="filterHavinNear" name="having" class="aside__conteinerFilters-having-input checkboxStyle"><span class="aside__conteinerFilters-having-label-style"></span>
+								</label>
+							</div>
 						</div>
-						<div class="aside__conteinerFilters-brends">
-							<div class="aside__conteinerFilters-brends-name"><a href="#" class="aside__conteinerFilters-having-name-link">Бренды</a></div><br>
-							<label for="brendIdLenova" class="aside__conteinerFilters-brends-label">Lenova
-								<input type="checkbox" name="brendName" id="brendIdLenova" class="aside__conteinerFilters-brends-input">
-								<div class="aside__conteinerFilters-brends-label-style"></div>
-							</label><br>
-							<label for="brendIdApple" class="aside__conteinerFilters-brends-label">Apple
-								<input type="checkbox" name="brendName" id="brendIdApple" class="aside__conteinerFilters-brends-input">
-								<div class="aside__conteinerFilters-brends-label-style"></div>
-							</label><br>
-							<label for="brendIdSamsung" class="aside__conteinerFilters-brends-label">Samsung
-								<input type="checkbox" name="brendName" id="brendIdSamsung" class="aside__conteinerFilters-brends-input">
-								<div class="aside__conteinerFilters-brends-label-style"></div>
-							</label><br>
-							<label for="brendIdAsus" class="aside__conteinerFilters-brends-label">Asus
-								<input type="checkbox" check="checked" name="brendName" id="brendIdAsus" class="aside__conteinerFilters-brends-input">
-								<div class="aside__conteinerFilters-brends-label-style"></div>
-							</label><br>
-							<label for="brendIdMotorola" class="aside__conteinerFilters-brends-label">Motorola
-								<input type="checkbox" name="brendName" id="brendIdMotorola" class="aside__conteinerFilters-brends-input">
-								<div class="aside__conteinerFilters-brends-label-style"></div>
-							</label><br><a href="#" class="aside__conteinerFilters-brends-reset">Сбросить фильтр</a>
+						<div class="aside__conteinerFilters-brends accordeonItem">
+							<div class="aside__conteinerFilters-brends-name"><a href="#" class="aside__conteinerFilters-having-name-link accordion_trigger">Бренды</a></div>
+							<div class="accordeonContainer">
+								<label for="brendIdLenova" class="aside__conteinerFilters-brends-label">Lenova
+									<input type="checkbox" name="brendName" id="brendIdLenova" class="aside__conteinerFilters-brends-input">
+									<div class="aside__conteinerFilters-brends-label-style"></div>
+								</label>
+								<label for="brendIdApple" class="aside__conteinerFilters-brends-label">Apple
+									<input type="checkbox" name="brendName" id="brendIdApple" class="aside__conteinerFilters-brends-input">
+									<div class="aside__conteinerFilters-brends-label-style"></div>
+								</label>
+								<label for="brendIdSamsung" class="aside__conteinerFilters-brends-label">Samsung
+									<input type="checkbox" name="brendName" id="brendIdSamsung" class="aside__conteinerFilters-brends-input">
+									<div class="aside__conteinerFilters-brends-label-style"></div>
+								</label>
+								<label for="brendIdAsus" class="aside__conteinerFilters-brends-label">Asus
+									<input type="checkbox" check="checked" name="brendName" id="brendIdAsus" class="aside__conteinerFilters-brends-input">
+									<div class="aside__conteinerFilters-brends-label-style"></div>
+								</label>
+								<label for="brendIdMotorola" class="aside__conteinerFilters-brends-label">Motorola
+									<input type="checkbox" name="brendName" id="brendIdMotorola" class="aside__conteinerFilters-brends-input">
+									<div class="aside__conteinerFilters-brends-label-style"></div>
+								</label><a href="#" class="aside__conteinerFilters-brends-reset">Сбросить фильтр</a>
+							</div>
 						</div>
-						<div class="aside__conteinerFilters-price">
-							<div class="aside__conteinerFilters-price-name"><a href="#" class="aside__conteinerFilters-having-name-link">Цена</a></div>
-							<input id="amount" type="text" readonly="" style="border:0; color:#f6931f; font-weight:bold;" class="aside__conteinerFilters-price-input-min">
-							<div id="slider-range" class="aside__conteinerFilters-price-div"></div>
+						<div class="aside__conteinerFilters-price accordeonItem">
+							<div class="aside__conteinerFilters-price-name"><a href="#" class="aside__conteinerFilters-having-name-link accordion_trigger">Цена</a></div>
+							<div class="aside__conteinerFilters-price-name-container accordeonContainer">
+								<div class="accordion-section__text-box">
+									<div class="accordion-section__text">от
+										<input type="text" id="amount1" class="accordion-section__input accordion-section__input_text accordion-section__input_text_min">
+									</div>
+									<div class="accordion-section__text accordion-section__text_right">до
+										<input type="text" id="amount2" class="accordion-section__input accordion-section__input_text accordion-section__input_text_max">
+									</div>
+								</div>
+								<div id="slider-range" class="aside__conteinerFilters-price-div"></div>
+							</div>
 						</div>
-						<div class="aside__conteinerFilters-color">
-							<div class="aside__conteinerFilters-color-name"><a href="#" class="aside__conteinerFilters-having-name-link">Цвет</a></div>
-							<div class="aside__conteinerFilters-color-container">
+						<div class="aside__conteinerFilters-color accordeonItem">
+							<div class="aside__conteinerFilters-color-name"><a href="#" class="aside__conteinerFilters-having-name-link accordion_trigger">Цвет</a></div>
+							<div class="aside__conteinerFilters-color-container accordeonContainer">
 								<div class="aside__conteinerFilters-color-container-items white"></div>
 								<div class="aside__conteinerFilters-color-container-items grey"></div>
 								<div class="aside__conteinerFilters-color-container-items black"></div>
@@ -132,28 +145,30 @@
 								<div class="aside__conteinerFilters-color-container-items brown"></div>
 							</div>
 						</div>
-						<div class="aside__conteinerFilters-system">
-							<div class="aside__conteinerFilters-system-name"><a href="#" class="aside__conteinerFilters-having-name-link">Операционные Системы</a></div><br>
-							<label for="systemAndroid" class="aside__conteinerFilters-system-label">Android
-								<input type="checkbox" name="systemdName" id="systemAndroid" class="aside__conteinerFilters-system-input">
-								<div class="aside__conteinerFilters-system-label-style"></div>
-							</label><br>
-							<label for="systemApple" class="aside__conteinerFilters-system-label">iOS
-								<input type="checkbox" name="systemName" id="systemApple" class="aside__conteinerFilters-system-input">
-								<div class="aside__conteinerFilters-system-label-style"></div>
-							</label><br>
-							<label for="systemWindows" class="aside__conteinerFilters-system-label">Windows Mobile
-								<input type="checkbox" name="systemName" id="systemWindows" class="aside__conteinerFilters-system-input">
-								<div class="aside__conteinerFilters-system-label-style"></div>
-							</label><br>
-							<label for="sistemSymbian" class="aside__conteinerFilters-system-label">Symbian
-								<input type="checkbox" check="checked" name="systemName" id="sistemSymbian" class="aside__conteinerFilters-system-input">
-								<div class="aside__conteinerFilters-system-label-style"></div>
-							</label><br>
-							<label for="sysytemCustom" class="aside__conteinerFilters-system-label">Custom
-								<input type="checkbox" name="systemName" id="sysytemCustom" class="aside__conteinerFilters-system-input">
-								<div class="aside__conteinerFilters-system-label-style"></div>
-							</label><br><a href="#" class="aside__conteinerFilters-system-reset">Сбросить фильтр</a>
+						<div class="aside__conteinerFilters-system accordeonItem">
+							<div class="aside__conteinerFilters-system-name"><a href="#" class="aside__conteinerFilters-having-name-link accordion_trigger">Операционные Системы</a></div><br>
+							<div class="accordeonContainer">
+								<label for="systemAndroid" class="aside__conteinerFilters-system-label">Android
+									<input type="checkbox" name="systemdName" id="systemAndroid" class="aside__conteinerFilters-system-input">
+									<div class="aside__conteinerFilters-system-label-style"></div>
+								</label>
+								<label for="systemApple" class="aside__conteinerFilters-system-label">iOS
+									<input type="checkbox" name="systemName" id="systemApple" class="aside__conteinerFilters-system-input">
+									<div class="aside__conteinerFilters-system-label-style"></div>
+								</label>
+								<label for="systemWindows" class="aside__conteinerFilters-system-label">Windows Mobile
+									<input type="checkbox" name="systemName" id="systemWindows" class="aside__conteinerFilters-system-input">
+									<div class="aside__conteinerFilters-system-label-style"></div>
+								</label>
+								<label for="sistemSymbian" class="aside__conteinerFilters-system-label">Symbian
+									<input type="checkbox" check="checked" name="systemName" id="sistemSymbian" class="aside__conteinerFilters-system-input">
+									<div class="aside__conteinerFilters-system-label-style"></div>
+								</label>
+								<label for="sysytemCustom" class="aside__conteinerFilters-system-label">Custom
+									<input type="checkbox" name="systemName" id="sysytemCustom" class="aside__conteinerFilters-system-input">
+									<div class="aside__conteinerFilters-system-label-style"></div>
+								</label><a href="#" class="aside__conteinerFilters-system-reset">Сбросить фильтр</a>
+							</div>
 						</div>
 					</div>
 				</aside>
@@ -167,18 +182,18 @@
 								<option value="" class="section__sort-byPrice-text-option">по производителю</option>
 							</select>
 						</div>
-						<div class="section__sort-byCatalogs"><span class="section__sort-byCatalogs-text">Вид Каталога</span><a href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView1"></a><a href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView2"></a><a href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView3"></a></div>
+						<div class="section__sort-byCatalogs"><span class="section__sort-byCatalogs-text">Вид Каталога</span><a id="view_link0" href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView1"></a><a id="view_link1" href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView2"></a><a id="view_link2" href="#" class="section__sort-byCatalogs-linkView section__sort-byCatalogs-linkView-active3 section__sort-byCatalogs-linkView3"></a></div>
 					</div>
 					<div class="section__contents">
-						<ul class="products products_block unstyled-list">
+						<ul id="view0" class="products products_block unstyled-list">
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_2.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_3.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_2.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_3.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>189238
@@ -214,12 +229,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_2.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_3.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_2.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_3.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>283135
@@ -255,12 +270,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_2.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_3.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_2.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_3.jpg" alt="Archos 50 Oxygen Plus" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>345328
@@ -296,12 +311,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_2.jpg" alt="Philips S398 Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_3.jpg" alt="Philips S398 Black" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_2.jpg" alt="Philips S398 Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_3.jpg" alt="Philips S398 Black" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>589338
@@ -337,12 +352,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_2.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_3.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_2.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_3.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>387228
@@ -378,12 +393,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_2.jpg" alt="Senseit L301 Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_3.jpg" alt="Senseit L301 Black" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_2.jpg" alt="Senseit L301 Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_3.jpg" alt="Senseit L301 Black" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>359110
@@ -419,12 +434,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_2.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_3.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_2.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_3.jpg" alt="HIGHSCREEN WinWin Black" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>422105
@@ -460,12 +475,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_2.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_3.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_2.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_3.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>112234
@@ -501,12 +516,12 @@
 							</li>
 							<li class="product product_view1 product_view2">
 								<div class="product__box product__box_view1 product__box_view2 product__box_img">
-									<div class="product__slideshow">
-										<div class="product__img-box product__img-box_big"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
+									<div class="product__slideshow slideshow">
+										<div class="product__img-box product__img-box_big slideshow_display"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
 										<div class="product__img-line">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_2.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_3.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_2.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_3.jpg" alt="Fly IQ434 Era Nano 5" class="product__img"/></a></div>
 										</div>
 									</div>
 									<div class="product__code"><span class="product__code-label">Артикул&nbsp;</span>187537
@@ -541,15 +556,15 @@
 								</div>
 							</li>
 						</ul>
-						<ul class="products_view1 products_block unstyled-list">
+						<ul id="view1" class="products_view1 products_block unstyled-list">
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_2.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/189238_3.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_1.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_2.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/189238_3.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>189238
@@ -577,12 +592,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_2.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/283135_3.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_1.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_2.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/283135_3.jpg" alt="Microsoft Lumia 640 RM-1077" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>283135
@@ -610,12 +625,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_2.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/345328_3.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_1.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_2.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/345328_3.jpg" alt="Archos 50 Oxygen Plus" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>345328
@@ -643,12 +658,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_2.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/589338_3.jpg" alt="Philips S398 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_1.jpg" alt="Philips S398 Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_2.jpg" alt="Philips S398 Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/589338_3.jpg" alt="Philips S398 Black" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>589338
@@ -676,12 +691,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_2.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/387228_3.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_1.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_2.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/387228_3.jpg" alt="Microsoft Lumia 430 RM-10" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>387228
@@ -709,12 +724,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_2.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/359110_3.jpg" alt="Senseit L301 Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_1.jpg" alt="Senseit L301 Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_2.jpg" alt="Senseit L301 Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/359110_3.jpg" alt="Senseit L301 Black" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>359110
@@ -742,12 +757,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_2.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/422105_3.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_1.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_2.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/422105_3.jpg" alt="HIGHSCREEN WinWin Black" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>422105
@@ -775,12 +790,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_2.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/112234_3.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_1.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_2.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/112234_3.jpg" alt="Alcatel OT4013D PIXI 3 (2 SIM)" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>112234
@@ -808,12 +823,12 @@
 							</li>
 							<li class="product_view1">
 								<div class="product__box_view1 product__box_view1_view1 product__box_view2_view1 product__box_img_view1">
-									<div class="product__slideshow_view1">
-										<div class="product__img-box_view1 product__img-box_big_view1"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+									<div class="product__slideshow_view1 slideshow">
+										<div class="product__img-box_view1 product__img-box_big_view1 slideshow_display"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
 										<div class="product__img-line_view1">
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_2.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
-											<div class="product__img-box product__img-box_mini"><img src="product_img/187537_3.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_1.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_2.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></a></div>
+											<div class="product__img-box product__img-box_mini slideshow_item"><a href="#" class="slideshow_pic"><img src="product_img/187537_3.jpg" alt="Fly IQ434 Era Nano 5" class="product__img_view1"/></a></div>
 										</div>
 									</div>
 									<div class="product__code_view1"><span class="product__code-label_view1">Артикул&nbsp;</span>187537
@@ -840,7 +855,7 @@
 								</div>
 							</li>
 						</ul>
-						<ul class="products_view2 products_block unstyled-list">
+						<ul id="view2" class="products_view2 products_block unstyled-list">
 							<li class="product_view2">
 								<div class="product__box_view2 product__box_view2_view2 product__box_view2_view2 product__box_img_view2">
 									<div class="product__code_view2"><span class="product__code-label_view2">Артикул&nbsp;</span>189238
@@ -1040,5 +1055,8 @@
 		<script src="../bower/jquery/jquery.js"></script>
 		<script src="../bower/jquery-ui/jquery-ui.min.js"></script>
 		<script src="../js/main.js"></script>
+		<script src="../js/views.js"></script>
+		<script src="../js/accordeon.js"></script>
+		<script src="../js/slider.js"></script>
 	</body>
 </html>

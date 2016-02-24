@@ -1,13 +1,13 @@
 
 div.section__contents
 	
-	ul.products.products_block.unstyled-list
+	ul.products.products_block.unstyled-list(id="view0")
 		each value, key in phones		
 			+products(key, value)
-	ul.products_view1.products_block.unstyled-list
+	ul.products_view1.products_block.unstyled-list(id="view1")
 		each value, key in phones		
 			+products_view1(key, value)
-	ul.products_view2.products_block.unstyled-list
+	ul.products_view2.products_block.unstyled-list(id="view2")
 		each value, key in phones		
 			+products_view2(key, value)
 

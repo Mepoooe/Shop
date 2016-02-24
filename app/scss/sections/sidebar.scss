@@ -37,7 +37,7 @@
 
 /* block with having */
 .aside__conteinerFilters-having{
-	padding: 15px 0 15px 28px ;
+	padding: 15px 0 0px 28px ;
 	border-bottom: 1px solid #dee1e4;
 }
 .aside__conteinerFilters-having-name{
@@ -49,22 +49,26 @@
     position: relative;
 
 }
-.aside__conteinerFilters-having-name-link{
+.aside__conteinerFilters-having-name-link, .aside__conteinerFilters-having-name-link-down{
 	text-decoration: none;
 	color: #000000;
 	display: inline-block;
     width: 260px;
     height: 100%;
-     &:after{
+     &:after, .aside__conteinerFilters-having-name-link-down:after{
     	content: '';
     	position: absolute;
     	background-image: url(../img/sprite_sidebar.png);
-		background-position: -19px 0px;
+		background-position: 50px 20px;
 		width: 18px;
 		height: 11px;
 		top:1px;
 		right: 15px;
     }
+}
+
+.aside__conteinerFilters-having-name-link-down:after{
+	background-position: -19px 0px;
 
 }
 .aside__conteinerFilters-having-input{
@@ -77,11 +81,11 @@
 /* block with brends and price */
 .aside__conteinerFilters-brends{
 	@extend .aside__conteinerFilters-having;
-
+	
 }
 .aside__conteinerFilters-brends-name{
 	@extend .aside__conteinerFilters-having-name;
-	margin-bottom: -6px;
+	margin-bottom: 15px;
 }
 .aside__conteinerFilters-brends-input{
 	@extend .aside__conteinerFilters-having-input
@@ -99,6 +103,73 @@
 .aside__conteinerFilters-price-name{
 	@extend .aside__conteinerFilters-having-name;
 }
+.aside__conteinerFilters-price-name-container{
+	display: block;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 19px 34px;
+    background-color: $logoColor;
+}
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: grey;
+    color: #222222;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    font-weight: normal;
+    background-image: url(../img/sprite.png);
+        background-position: -51px -32px;
+    width: 9px;
+    height: 15px;
+    color: #555555;
+    top: 3px;
+    background-color: white;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none; 
+    background-image: url(../img/sprite.png);
+    font-weight: normal;
+    color: #555555;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -6px;
+}
+
+.accordion-section__text-box{
+	margin-bottom: 25px;
+}
+.accordion-section__text{
+	display: inline;
+	vertical-align: top;
+	margin-left: 7px;
+	width: 240px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.accordion-section__input_text{
+	width: 50px;
+	border: 1px solid $borderColor;
+    border-radius: 5px;
+
+}
+.accordion-section__input_text_min{
+
+}
+.accordion-section__input_text_max{
+
+	margin-left: 10px;
+}
+
+
 .aside__conteinerFilters-price-input-min{
 	width: 80px;
 	border-radius: 5px;
@@ -120,7 +191,7 @@
 /* block with color */
 .aside__conteinerFilters-color{
 	@extend .aside__conteinerFilters-having;
-	padding: 15px 0 15px 28px;
+	padding: 15px 0 0px 28px;
 	
 }
 .aside__conteinerFilters-color-container{
@@ -128,6 +199,7 @@
 	width: 250px;
 	margin: 0;
 	border-bottom: none;
+	display: none
 }
 .aside__conteinerFilters-color-name{
     margin-bottom: 15px;

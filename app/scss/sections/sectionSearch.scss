@@ -44,8 +44,29 @@
 	display: inline-block;
 	text-indent: -9999;
     vertical-align: middle;
+    width: 17px;
+    height: 17px;
 }
 
 @include views (1, -35px 0px, 0px 0px);
 @include views (2, -17px -18px, -18px 0px);
-@include views (3, 0px -18px, 0px -18px);
+@include views (3, -35px -16px, 0px -18px); 
+
+.section__sort-byCatalogs-linkView-active1{
+        background-image: url(../img/sprite.png);
+        background-position: 0px 0px;
+         width: 17px;
+        height: 17px;
+    }
+.section__sort-byCatalogs-linkView-active2{
+        background-image: url(../img/sprite.png);
+        background-position: 110px 0px;
+         width: 17px;
+        height: 17px;
+    }
+.section__sort-byCatalogs-linkView-active3{
+        background-image: url(../img/sprite.png);
+        background-position: 0px -18px;
+         width: 17px;
+        height: 17px;
+    }

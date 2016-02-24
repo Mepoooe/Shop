@@ -2,7 +2,7 @@
 /* having in store */
 .aside__conteinerFilters-having-label{
     position: relative;
-    display: inline-block;
+    display: block;
     font-family: "Open Sans Regular";
     margin: 2px 0 15px 25px;
         &:hover{
@@ -62,7 +62,7 @@
 
 .aside__conteinerFilters-brends-label{
     position: relative;
-    display: inline-block;
+    display: block;
     font-family: "Open Sans Regular";
     margin: 2px 0 15px 25px;
         &:hover{
@@ -117,7 +117,7 @@
 /* system */
 .aside__conteinerFilters-system-label{
     position: relative;
-    display: inline-block;
+    display: block;
     font-family: "Open Sans Regular";
     margin: 2px 0 15px 25px;
         &:hover{
@@ -167,4 +167,9 @@
                        top: 2px;
                    }
         }
+}
+
+/* for js */
+.accordeonContainer{
+  display: none;
 }

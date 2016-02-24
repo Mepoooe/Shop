@@ -16,94 +16,103 @@ aside.aside
 							a.aside__filterPhone-list-items-links(href="#")= item
 
 		div.aside__conteinerFilters
-			div.aside__conteinerFilters-having
+			div.aside__conteinerFilters-having.accordeonItem
 				div.aside__conteinerFilters-having-name
-					a.aside__conteinerFilters-having-name-link(href='#') Наличие в магазинах
-				label.aside__conteinerFilters-having-label(for="filterHevingAll") Во всех магазинах
-					input.aside__conteinerFilters-having-input.checkboxStyle(type="radio" name="having" id="filterHevingAll" ) 
-					div.aside__conteinerFilters-having-label-style
+					a.aside__conteinerFilters-having-name-link.accordion_trigger(href='#') Наличие в магазинах
+				.accordeonContainer
+					label.aside__conteinerFilters-having-label(for="filterHevingAll") Во всех магазинах
+						input.aside__conteinerFilters-having-input.checkboxStyle(type="radio" name="having" id="filterHevingAll" ) 
+						div.aside__conteinerFilters-having-label-style
 
-				br
-				label.aside__conteinerFilters-having-label(for="filterHavinNear") В ближайшем ко мне магазине
-					input.aside__conteinerFilters-having-input.checkboxStyle(type="radio" id="filterHavinNear" name="having")
-					span.aside__conteinerFilters-having-label-style
+					
+					label.aside__conteinerFilters-having-label(for="filterHavinNear") В ближайшем ко мне магазине
+						input.aside__conteinerFilters-having-input.checkboxStyle(type="radio" id="filterHavinNear" name="having")
+						span.aside__conteinerFilters-having-label-style
 
-			div.aside__conteinerFilters-brends
+			div.aside__conteinerFilters-brends.accordeonItem
 				div.aside__conteinerFilters-brends-name
-					a.aside__conteinerFilters-having-name-link(href='#') Бренды
+					a.aside__conteinerFilters-having-name-link.accordion_trigger(href='#') Бренды
 
-				br
-				label.aside__conteinerFilters-brends-label(for="brendIdLenova") Lenova
-					input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdLenova")
-					div.aside__conteinerFilters-brends-label-style
+				.accordeonContainer
+					label.aside__conteinerFilters-brends-label(for="brendIdLenova") Lenova
+						input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdLenova")
+						div.aside__conteinerFilters-brends-label-style
 
-				br
-				label.aside__conteinerFilters-brends-label(for="brendIdApple") Apple
-					input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdApple")
-					div.aside__conteinerFilters-brends-label-style
-				br
+					
+					label.aside__conteinerFilters-brends-label(for="brendIdApple") Apple
+						input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdApple")
+						div.aside__conteinerFilters-brends-label-style
+					
 
-				label.aside__conteinerFilters-brends-label(for="brendIdSamsung") Samsung
-					input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdSamsung")
-					div.aside__conteinerFilters-brends-label-style
-				br
+					label.aside__conteinerFilters-brends-label(for="brendIdSamsung") Samsung
+						input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdSamsung")
+						div.aside__conteinerFilters-brends-label-style
+					
 
-				label.aside__conteinerFilters-brends-label(for="brendIdAsus") Asus
-					input.aside__conteinerFilters-brends-input(type="checkbox" check="checked" name="brendName" id="brendIdAsus")
-					div.aside__conteinerFilters-brends-label-style
-				br
+					label.aside__conteinerFilters-brends-label(for="brendIdAsus") Asus
+						input.aside__conteinerFilters-brends-input(type="checkbox" check="checked" name="brendName" id="brendIdAsus")
+						div.aside__conteinerFilters-brends-label-style
+					
 
-				label.aside__conteinerFilters-brends-label(for="brendIdMotorola") Motorola
-					input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdMotorola")
-					div.aside__conteinerFilters-brends-label-style
-				br
-				a.aside__conteinerFilters-brends-reset(href="#")
-					|Сбросить фильтр
-			div.aside__conteinerFilters-price
+					label.aside__conteinerFilters-brends-label(for="brendIdMotorola") Motorola
+						input.aside__conteinerFilters-brends-input(type="checkbox" name="brendName" id="brendIdMotorola")
+						div.aside__conteinerFilters-brends-label-style
+					
+					a.aside__conteinerFilters-brends-reset(href="#")
+						|Сбросить фильтр
+
+			div.aside__conteinerFilters-price.accordeonItem
 				div.aside__conteinerFilters-price-name
-					a.aside__conteinerFilters-having-name-link(href='#') Цена
-				//- label.aside__conteinerFilters-price-label(for="priceMin") от
-				//- input.aside__conteinerFilters-price-input-min(type="text" name="priceMinName" id="priceMin")
-				//- label.aside__conteinerFilters-price-label(for="priceMax") до
-				//- input.aside__conteinerFilters-price-input-max(type="text" name="priceMaxName" id="priceMax")
-				input.aside__conteinerFilters-price-input-min(id="amount" type='text', readonly='', style='border:0; color:#f6931f; font-weight:bold;')
-				div.aside__conteinerFilters-price-div(id='slider-range')
+					a.aside__conteinerFilters-having-name-link.accordion_trigger(href='#') Цена
+				.aside__conteinerFilters-price-name-container.accordeonContainer
+					.accordion-section__text-box
+						.accordion-section__text
+							| от
+							input.accordion-section__input.accordion-section__input_text.accordion-section__input_text_min(type='text' id='amount1')
+						.accordion-section__text.accordion-section__text_right
+							| до
+							input.accordion-section__input.accordion-section__input_text.accordion-section__input_text_max(type='text' id='amount2')
 
 
-			div.aside__conteinerFilters-color
+					//- input.aside__conteinerFilters-price-input-min(id="amount" type='text', readonly='', style='border:0; color:#f6931f; font-weight:bold;')
+					div.aside__conteinerFilters-price-div(id='slider-range')
+
+
+			div.aside__conteinerFilters-color.accordeonItem
 				div.aside__conteinerFilters-color-name
-					a.aside__conteinerFilters-having-name-link(href='#') Цвет
+					a.aside__conteinerFilters-having-name-link.accordion_trigger(href='#') Цвет
 
 				- var divColors = ['white', 'grey', 'black', 'steelblue', 'red', 'yellow', 'orange', 'green', 'blue', 'purple', 'pink', 'brown']
 
-					div.aside__conteinerFilters-color-container
+					div.aside__conteinerFilters-color-container.accordeonContainer
 						each divColor in divColors
 							div.aside__conteinerFilters-color-container-items(class=divColor)
 
-			div.aside__conteinerFilters-system
+			div.aside__conteinerFilters-system.accordeonItem
 				div.aside__conteinerFilters-system-name
-					a.aside__conteinerFilters-having-name-link(href='#') Операционные Системы
+					a.aside__conteinerFilters-having-name-link.accordion_trigger(href='#') Операционные Системы
 
 				br
-				label.aside__conteinerFilters-system-label(for="systemAndroid") Android
-					input.aside__conteinerFilters-system-input(type="checkbox" name="systemdName" id="systemAndroid")
-					div.aside__conteinerFilters-system-label-style
-				br
-				label.aside__conteinerFilters-system-label(for="systemApple") iOS
-					input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemApple")
-					div.aside__conteinerFilters-system-label-style
-				br
-				label.aside__conteinerFilters-system-label(for="systemWindows") Windows Mobile
-					input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemWindows")
-					div.aside__conteinerFilters-system-label-style
-				br
-				label.aside__conteinerFilters-system-label(for="sistemSymbian") Symbian
-					input.aside__conteinerFilters-system-input(type="checkbox" check="checked" name="systemName" id="sistemSymbian")
-					div.aside__conteinerFilters-system-label-style
-				br
-				label.aside__conteinerFilters-system-label(for="sysytemCustom") Custom
-					input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="sysytemCustom")
-					div.aside__conteinerFilters-system-label-style
-				br
-				a.aside__conteinerFilters-system-reset(href="#")
-					|Сбросить фильтр
+				.accordeonContainer
+					label.aside__conteinerFilters-system-label(for="systemAndroid") Android
+						input.aside__conteinerFilters-system-input(type="checkbox" name="systemdName" id="systemAndroid")
+						div.aside__conteinerFilters-system-label-style
+					
+					label.aside__conteinerFilters-system-label(for="systemApple") iOS
+						input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemApple")
+						div.aside__conteinerFilters-system-label-style
+					
+					label.aside__conteinerFilters-system-label(for="systemWindows") Windows Mobile
+						input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="systemWindows")
+						div.aside__conteinerFilters-system-label-style
+					
+					label.aside__conteinerFilters-system-label(for="sistemSymbian") Symbian
+						input.aside__conteinerFilters-system-input(type="checkbox" check="checked" name="systemName" id="sistemSymbian")
+						div.aside__conteinerFilters-system-label-style
+					
+					label.aside__conteinerFilters-system-label(for="sysytemCustom") Custom
+						input.aside__conteinerFilters-system-input(type="checkbox" name="systemName" id="sysytemCustom")
+						div.aside__conteinerFilters-system-label-style
+				
+					a.aside__conteinerFilters-system-reset(href="#")
+						|Сбросить фильтр
