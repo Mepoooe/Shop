@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 	compass = require('gulp-compass'),
 	plumber = require('gulp-plumber'),
 	//IMG
-	spritesmith = require('gulp.spritesmith'),
+	/*spritesmith = require('gulp.spritesmith'),*/
 	//Build
 	gulpif = require('gulp-if'),
 	useref = require('gulp-useref'),

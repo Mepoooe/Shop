@@ -160,6 +160,8 @@ form {
   margin-left: 108px;
   font-size: 18px;
   position: relative;
+  text-decoration: none;
+  color: #000000;
 }
 .container__up-contacts-telephone:after {
   background-image: url(../img/sprite.png);
@@ -451,6 +453,10 @@ form {
   margin-bottom: 7px;
   font-size: 14px;
   color: #b1d9fb;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .aside__conteinerFilters-price-name-container {
