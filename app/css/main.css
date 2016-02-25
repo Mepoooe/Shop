@@ -950,7 +950,7 @@ form {
 
 .product__slideshow {
   width: 135px;
-  margin: auto;
+  margin-left: 50px;
   margin-bottom: 6px;
 }
 
@@ -984,13 +984,8 @@ form {
 }
 
 .product__code-label {
-  /* 	font-family: $fontBold; */
   font-size: 12px;
   color: #7F7F7F;
-}
-
-.product__title {
-  /* 	font-family: $fontSemibold; */
 }
 
 .products_block .product__attr:nth-child(2n+1) {
@@ -1095,7 +1090,7 @@ form {
 .product {
   width: 232px;
   margin: 0 15px 15px 0;
-  height: 513px;
+  height: 550px;
   vertical-align: top;
   border-radius: 10px;
 }
@@ -1107,7 +1102,7 @@ form {
 .product__title {
   text-align: center;
   width: 200px;
-  margin: auto;
+  margin: 0px auto 9px;
   height: 42px;
   overflow: hidden;
 }

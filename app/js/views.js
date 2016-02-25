@@ -73,7 +73,7 @@ var myModule = (function(){
 
 
       if (view1) {
-          classView0.hide(1000);
+          classView1.hide(1000);
           classView2.hide(1000);
           classView0.show(1000);
           viewLink1.addClass('section__sort-byCatalogs-linkView-active2');
